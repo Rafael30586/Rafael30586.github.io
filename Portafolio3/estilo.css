@@ -2,6 +2,7 @@ body {
 	font-family: sans-serif;
 	background-color: rgb(0, 11, 78);
 	letter-spacing: 1px;
+	user-select: none;
 }
 
 #encabezado{
@@ -227,6 +228,27 @@ footer{
 	color: rgb(255, 255, 162);
 }
 */
+button{
+	opacity: 1.0;
+	background-color: rgb(149, 7, 0);
+	/*border: none;*/
+	border: none;
+	transition-duration: 0.2s;
+	transition-property: background;
+	border-radius: 50%;
+}
+
+
+button:hover{
+	/*
+	border-bottom-style: solid;
+	border-bottom-color: rgb(255, 255, 162);*/
+	background: linear-gradient(to bottom,rgb(149, 7, 0), rgb(255, 0, 43));
+}
+
+#botonGmail{
+	border-radius: 25%;
+}
 
 #GitHubPNG{
 	width: 100%;

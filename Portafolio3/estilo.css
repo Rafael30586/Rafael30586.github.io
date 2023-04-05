@@ -1,0 +1,207 @@
+body {
+	font-family: sans-serif;
+	background-color: rgb(0, 11, 78);
+	letter-spacing: 1px;
+}
+
+#encabezado{
+	font-size: 50px;
+	color: rgb(255, 255, 162);
+	margin-bottom: 50px;
+	letter-spacing: 5px;
+	text-align: center;
+	margin-top: 30px;
+	font-weight: 800;
+}
+
+#presentacion{
+	display: flex;
+	color: rgb(255, 255, 162);
+	background-color: rgb(0, 11, 100);
+	gap: 10px;
+	opacity: 0.5;
+	text-align: left;
+	transition-duration: 0.5s;
+	transition-property: opacity, border-bottom-width, border-bottom-style, background;
+	font-size: 20px;
+}
+
+#presentacion:hover{
+	opacity: 0.8;
+	border-bottom-width: 1px;
+	background: linear-gradient(to bottom,rgb(0, 11, 100), rgb(0, 11, 78));
+	border-bottom-style: solid;
+    border-bottom-color: rgb(255, 255, 162);
+}
+/*
+#fotoMia {
+	width: 100%;
+	height: 100%;
+	height: 249px;
+	width: 287px;
+}
+*/
+#fotoMia {
+    border-radius: 6%;
+    filter: sepia(90%);
+    transition-duration: 0.5s;
+    transition-property: filter, border-radius;
+    /*flex-basis: 250px;*/
+    object-fit: contain;
+    object-position: top;
+    width: 100%;
+	height: 100%;
+	height: 249px;
+	width: 287px;
+    padding: 10px;
+}
+
+#fotoMia:hover{
+	filter: sepia(0%);
+	border-radius: 10%;
+    
+}
+
+#textoPresentacion{
+	margin-left: 20px;
+}
+
+#superTrabajos{
+	margin-top: 50px;
+}
+
+h2{
+	letter-spacing: 40px;
+	color: rgb(255, 255, 162);
+	text-align: center;
+	font-weight: 1500;
+	font-size: 35px;
+}
+
+#trabajos{
+	display: flex;
+	
+	justify-content: space-evenly;
+	margin-top: 20px;
+}
+
+.trabajo{
+	padding: 10px;
+	color: rgb(255, 255, 162);
+	background-color: rgb(0, 11, 100);
+	margin: 10px;
+	transition-duration: 0.5s;
+	transition-property: opacity, border-bottom-width, border-bottom-style, background;
+	opacity: 0.07;
+}
+
+.trabajo:hover{
+	opacity: 0.8;
+	border-bottom-width: 1px;
+	background: linear-gradient(to bottom,rgb(0, 11, 100), rgb(0, 11, 78));
+	border-bottom-style: solid;
+    border-bottom-color: rgb(255, 255, 162);
+}
+
+#habilidades{
+	margin-top: 50px;
+}
+
+.habilidad{
+	display: flex;
+	justify-content: space-evenly;	
+	margin-top: 50px;
+}
+
+.habilidad img{
+	width: 128px;
+	height: 128px;
+}
+
+.habilidadImagen{
+	filter: brightness(0.05);
+	transition-property: filter;
+	transition-duration: 0.5s;
+}
+
+.habilidadImagen:hover{
+	filter: brightness(1.0);
+}
+
+#GitPNG{
+	width: 100%;
+	height: 100%;
+	height: 128px;
+	width: 128px;
+}
+
+#MySQLPNG{
+	width: 100%;
+	height: 100%;
+	height: 128px;
+	width: 128px;
+}
+
+#JSPNG{
+	width: 100%;
+	height: 100%;
+	height: 128px;
+	width: 128px;
+}
+
+#CmasmasPNG{
+	width: 100%;
+	height: 100%;
+	height: 128px;
+	width: 128px;
+}
+
+footer{
+	background-color: rgb(149, 7, 0);
+	display: flex;
+	height: 150px;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.contacto{
+	margin-top: 35px;
+	align-items: center;
+	transition-property: color;
+    transition-duration: 0.8s;
+    color: rgb(149, 7, 0);
+}
+
+
+.contacto:hover{
+	color: rgb(255, 255, 162);
+}
+
+#GitHubPNG{
+	width: 100%;
+	height: 100%;
+	height: 64px;
+	width: 64px;
+	margin-left: 20px;
+}
+
+#LinkedinPNG{
+	width: 100%;
+	height: 100%;
+	height: 64px;
+	width: 64px;
+	margin-left: 60px;
+}
+
+#WhatsappPNG{
+	width: 100%;
+	height: 100%;
+	height: 64px;
+	width: 64px;
+	margin-left: 20px;
+}
+
+
+#GmailPNG{
+	margin-left: 40px;
+}

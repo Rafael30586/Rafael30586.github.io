@@ -1,0 +1,180 @@
+body{
+	background-color: rgb( 10, 26, 105);
+	color: rgb(251, 255, 205);
+}
+
+h1{
+	
+	text-align: center;
+	font-size: 60px;
+	text-decoration-line: underline;
+	transition-duration: 0.5s;
+	transition-property: background;
+	/*color: rgb(255, 221, 3);*/
+}
+/*
+h1:hover{
+	background: linear-gradient(to bottom,rgb(220, 10, 0), rgb(248, 62, 22));
+}
+*/
+#pageWelcome{
+	text-align: center;
+	font-size: 30px;
+	/*margin-bottom: 30px;*/
+	transition-duration: 0.5s;
+	transition-property: background;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    /*margin-left: 0px;
+    margin-right: 0px;*/
+}
+/*
+#pageWelcome:hover{
+	background: linear-gradient(to bottom,rgb(248, 62, 22), rgb(220, 10, 0));
+}
+*/
+#grilla{
+	display: flex;
+	
+	
+}
+
+h2{
+	padding-left: 20px;
+	/*color: rgb(255, 221, 3);*/
+	text-decoration: underline;
+}
+
+h3{
+	padding-left: 20px;
+	
+}
+
+h4{
+	padding-left: 20px;
+	/*color: rgb(255, 221, 3);*/
+}
+
+button{
+	background-color: rgb(251, 255, 205);
+	font-weight: bold;
+	color: rgb(10, 26, 105 );
+	transition-property: filter;
+	transition-duration: 0.5s;
+}
+
+button:hover{
+	filter: brightness(1.5);
+}
+
+.contenedor {
+	margin-top: 0px;
+	margin-left: 20px;
+	transition-duration: 0.5s;
+	transition-property: border-radius, border-width, background;
+	padding: 10px;
+}
+
+.contenedor:hover{
+	border-radius: 1%;
+	
+	
+	border-width: thin;
+	background: linear-gradient(to right,rgb(220, 10, 0), rgb(248, 62, 22));
+}
+
+.contenedor input{
+	margin-top: 20px;
+	background-color: rgb(255, 255, 255);
+}
+
+#superContenedor2{
+	transition-property: border-radius, border-style, background;
+	transition-duration: 0.5s;
+	margin-top: 0px;
+	padding: 10px;
+}
+
+#superContenedor2:hover{
+	border-radius: 1%;
+	
+	
+	border-width: thin;
+	background: linear-gradient(to right,rgb(220, 10, 0), rgb(248, 62, 22));
+}
+
+.code{
+	transition-duration: 0.5s;
+	transition-property: color;
+}
+
+.code:hover{
+	color: rgb(255, 247, 3);
+}
+
+#characterList li{
+	list-style: circle;
+    list-style-position: outside;
+    padding-left: 0px;
+}
+
+#superContenedor3{
+	transition-property: border-radius, border-style, background;
+	transition-duration: 0.5s;
+	margin-top: 0px;
+	padding: 10px;
+}
+
+#superContenedor3:hover{
+	border-radius: 1%;
+	
+	
+	border-width: thin;
+	background: linear-gradient(to right,rgb(248, 62, 22), rgb(220, 10, 0));
+}
+
+#superContenedor3 #contenedor3 ol{
+	list-style: square;
+	list-style-position: inside;
+}
+
+
+
+.botonResultados{
+	margin-top: 20px;
+	width: 100px;
+    height: 30px;
+    margin-left: 24px;
+}
+
+.buttonPanel{
+	margin-left: 20px;
+}
+
+.botonPagina{
+	margin-top: 30px;
+	width: 100px;
+    height: 30px;
+}
+
+.botonPagina2{
+	margin-top: 2px;
+	width: 100px;
+    height: 30px;
+}
+
+.contenedor b{
+	color: wheat;
+}
+
+.contenedor3{
+	margin-left: 20px;
+}
+
+#nombrePersonajeElegido{
+	text-decoration: none;
+}
+
+#pagePanel{
+	color: rgb(255, 221, 3);
+}

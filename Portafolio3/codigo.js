@@ -38,6 +38,10 @@ function irANumerosRomanos(){
 	window.open("https://github.com/Rafael30586/NumerosRomanosEX");
 }
 
+function irAAPIMarvel(){
+	window.open("https://rafael30586.github.io/APIMarvelConexion/");
+}
+
 function irAPorcentajes(){
 	window.open("https://github.com/Rafael30586/PorcentajeCalculosEX");
 }
@@ -49,4 +53,5 @@ botonGitHub.addEventListener("click",irAGitHub);
 botonLinkedin.addEventListener("click",irALinkedin);
 
 numerosRomanos.addEventListener("click",irANumerosRomanos);
+APIMarvel.addEventListener("click",irAAPIMarvel);
 porcentajes.addEventListener("click",irAPorcentajes);

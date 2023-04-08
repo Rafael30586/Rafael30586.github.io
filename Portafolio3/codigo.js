@@ -8,7 +8,8 @@ let APIMarvel;
 let porcentajes;
 let encabezado;
 //const divEncabezado;
-const textoEncabezado = document.createTextNode(" - Desarrollador Java");
+const textoEncabezado = document.createTextNode("Desarrollador Java");
+const textoEncabezadoOriginal = document.createTextNode("F. Rafael Alvarez");
 //const textoMasRelevantes = document.createTextNode(" ...más relevantes");
 //const textoFrontend = document.createTextNode(" ...para frontend");
 //const textoOtrosLenguajes = document.createTextNode(" ...menos desarrolladas");
@@ -63,6 +64,7 @@ function irAPorcentajes(){
 function focoEnEncabezado(){ //aplicar setTimeout()
 	//encabezado += "<div>Desarrollador Java</div>";
 	//setTimeout(encabezado.appendChild(textoEncabezado),2000)
+	encabezado.removeChild(textoEncabezadoOriginal);
 	encabezado.appendChild(textoEncabezado);
 	//primerHijoEncabezado.setAttribute("class","flecha");
 	encabezado.setAttribute("class","inversionColor");
@@ -71,17 +73,16 @@ function focoEnEncabezado(){ //aplicar setTimeout()
 
 function sacarHijo(){ //aplicar setTimeout()
 	encabezado.removeChild(textoEncabezado);
+	encabezado.appendChild(textoEncabezadoOriginal);
 	encabezado.removeAttribute("class");
 	encabezado.setAttribute("id","encabezado");
 }
 
-function focoMasRelevantes(){
-	masRelevantes.appendChild(textoMasRelevantes);
+function llenarEncabezado(){
+	encabezado.appendChild(textoEncabezadoOriginal);
 }
 
-function sacarHijoMasRelevantes(){
-	masRelevantes.removeChild(textoMasRelevantes);
-}
+llenarEncabezado();
 
 botonWhatsapp.addEventListener("click",numeroTelefono);
 botonGmail.addEventListener("click",correoElectronico);

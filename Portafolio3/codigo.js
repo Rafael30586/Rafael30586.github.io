@@ -57,6 +57,10 @@ function irAAPIMarvel(){
 	window.open("https://rafael30586.github.io/APIMarvelConexion/");
 }
 
+function irACalculadora(){
+	window.open("https://github.com/Rafael30586/CalculadoraEX");
+}
+
 function irAPorcentajes(){
 	window.open("https://github.com/Rafael30586/PorcentajeCalculosEX");
 }
@@ -91,6 +95,7 @@ botonLinkedin.addEventListener("click",irALinkedin);
 
 numerosRomanos.addEventListener("click",irANumerosRomanos);
 APIMarvel.addEventListener("click",irAAPIMarvel);
+calculadora.addEventListener("click",irACalculadora);
 porcentajes.addEventListener("click",irAPorcentajes);
 
 encabezado.addEventListener("mouseover",focoEnEncabezado); //aplicar setTimeout()

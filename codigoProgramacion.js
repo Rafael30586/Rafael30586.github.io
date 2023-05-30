@@ -1,0 +1,1 @@
+alert("Portafolio desactualizado. Consultar al creador de este trabajo por el portafolio actual.")

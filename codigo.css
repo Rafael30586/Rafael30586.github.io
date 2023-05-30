@@ -194,7 +194,7 @@ footer{
 	font-size: 30px;
 	margin-top: 50px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     height: 100px;
     justify-content: space-evenly;
     

@@ -3,15 +3,80 @@ body{
 }
 
 #encabezado{
-    background-color: #0000b7;
+    /*background-color: #0000b7;*/
+    /*background: linear-gradient(to bottom,#0000b7,#1432c1);*/
+    /*background: linear-gradient(to bottom,#8319b1,#0000b7);*/
+    background: linear-gradient(to bottom,#0000b7,#291a45);
+}
+
+.navOpcion{
+    opacity: 1;
+}
+
+.navOpcion:hover{
+    opacity: 0.6;
+    /*background-color: #bb1afb;*/
+    background: linear-gradient(to bottom,#0000b7,#bb1afb);
+    border-radius: 25%;
+}
+
+@keyframes cambio{
+    0% {color: #0000b7;}
+    30% {color: #30eee8;}
+    70% {color: #f7f6f6;}
+    100%{color: #291a45;}
+}
+
+#presentacion h1{
+    animation-name: cambio;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#presentacion img{
+    clip-path: ellipse(12% 21% at 15% 48%);
+    transition-duration: 1s;
+    transition-delay: 0.8s;
+    box-shadow: 3px 3px lawngreen;
+}
+
+#presentacion img:hover{
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    box-shadow: 3px 3px lightcoral;
 }
 
 #presentacion{
-    color: #13a1ff;
+    color: #f9f7f7;
+    opacity: 0.4;
+    /*
+    animation-name: cambio;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;*/
+}
+
+#presentacion:hover{
+    background: linear-gradient(to bottom,#686868,#313131);
+    border-color: #686868;
+    opacity: 1;
 }
 
 #h1Habilidades{
     color: #4aff1d;
+}
+
+#habilidades div div{
+    background: none;
+    border-color: #1dee31;
+    opacity: 0.5;
+    transition-property: background, opacity;
+    transition-duration: 0.3s;
+}
+
+#habilidades div div:hover{
+    opacity: 1;
+    background: linear-gradient(to right,#24ffff,#1dee31);
+    border-radius: 6%;
+    border-width: 0px;
 }
 
 #h1Trabajos{

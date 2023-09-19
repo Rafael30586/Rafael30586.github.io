@@ -22,10 +22,10 @@
 
 				<ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
 					<li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
-					<li><a href="#" class="nav-link px-2 text-white">Trayectoria</a></li>
-					<li><a href="#" class="nav-link px-2 text-white">Trabajos</a></li>
-					<li><a href="#" class="nav-link px-2 text-white">Habilidades</a></li>
-					<li><a href="#" class="nav-link px-2 text-white">Contacto</a></li>
+					<li class="navOpcion"><a href="#" class="nav-link px-2 text-white">Trayectoria</a></li>
+					<li class="navOpcion"><a href="#" class="nav-link px-2 text-white">Habilidades</a></li>
+					<li class="navOpcion"><a href="#" class="nav-link px-2 text-white">Trabajo</a></li>
+					<li class="navOpcion"><a href="#" class="nav-link px-2 text-white">Contacto</a></li>
 				</ul>
 
 				<form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
@@ -41,9 +41,9 @@
 		</div>
 	</header>
 
-	<div class="px-4 py-5 m-auto my-5 text-center border border-info rounded-top-5 w-75" id="presentacion">
+	<div class="px-4 py-5 m-auto my-5 text-center rounded-5 w-75" id="presentacion">
 		<img class="d-block mx-auto mb-4 rounded-top" src="fotoMia.jpg" alt="Mi foto" width="170" height="150">
-		<h1 class="display-5 fw-bold ">F. Rafael Alvarez</h1> <!-- class = text-body-emphasis-->
+		<h1 class="display-5 fw-bold">F. Rafael Alvarez</h1> <!-- class = text-body-emphasis-->
 		<div class="col-lg-6 mx-auto">
 			<p class="lead mb-4">Programador junior con más de un año de experiencia, enfocado en el
 				desarrollo web, principlamente backend, aunque también poseo
@@ -62,23 +62,26 @@
 	<div class="container">
 		<h1 class="text-center fw-bold mb-5" id="h1Trayectoria">Trayectoria</h1>
 		<nav>
-			<div class="nav nav-tabs" id="nav-tab" role="tablist">
-				<button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button"
-					role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
-				<button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button"
-					role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
-				<button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button"
-					role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
-				<button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button"
-					role="tab" aria-controls="nav-disabled" aria-selected="false" disabled>Disabled</button>
+			<div class="nav nav-tabs" id="nav-tab" role="tablist"> <!-- cambie home por inicio-->
+				<button class="nav-link active" id="nav-inicio-tab" data-bs-toggle="tab" data-bs-target="#nav-inicio" type="button"
+					role="tab" aria-controls="nav-inicio" aria-selected="true">Inicio</button>
+				<button class="nav-link" id="nav-busqueda-tab" data-bs-toggle="tab" data-bs-target="#nav-busqueda" type="button"
+					role="tab" aria-controls="nav-busqueda" aria-selected="false">Desicion</button> <!-- cambie profile por busqueda-->
+				<button class="nav-link" id="nav-beca-tab" data-bs-toggle="tab" data-bs-target="#nav-beca" type="button" role="tab"
+					aria-controls="nav-beca" aria-selected="false">Argentina programa</button> <!-- cambie contact por beca-->
+				<button class="nav-link" id="nav-anterior-tab" data-bs-toggle="tab" data-bs-target="#nav-anterior" type="button" role="tab"
+					aria-controls="nav-anterior" aria-selected="false">Ciencia</button> <!-- cambie beca por anterior-->
+				<button class="nav-link" id="nav-antes-tab" data-bs-toggle="tab" data-bs-target="#nav-antes" type="button" role="tab"
+					aria-controls="nav-antes" aria-selected="false" disabled>Disabled</button> <!-- cambie disabled por antes-->
 			</div>
 		</nav>
 		<div class="tab-content text-bg-dark" id="nav-tabContent">
-			<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0"><span>Hola</span>
+			<div class="tab-pane fade show active" id="nav-inicio" role="tabpanel" aria-labelledby="nav-inicio-tab" tabindex="0"><span>Hola</span>
 			</div>
-			<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0"><span>Como andas</span></div>
-			<div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0"><span>Chau</span></div>
-			<div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">...
+			<div class="tab-pane fade" id="nav-busqueda" role="tabpanel" aria-labelledby="nav-busqueda-tab" tabindex="0"><span>Como andas</span></div>
+			<div class="tab-pane fade" id="nav-beca" role="tabpanel" aria-labelledby="nav-beca-tab" tabindex="0"><span>Chau</span></div>
+			<div class="tab-pane fade" id="nav-anterior" role="tabpanel" aria-labelledby="nav-anterior-tab" tabindex="0"><span>Chau adios</span></div>
+			<div class="tab-pane fade" id="nav-antes" role="tabpanel" aria-labelledby="nav-antes-tab" tabindex="0"><span>Adios</span>
 			</div>
 		</div>
 
@@ -365,6 +368,42 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="container px-4 py-5" id="icon-grid">
+		<h2 class="pb-2 border-bottom">Contacto</h2>
+	
+		<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+		  <div class="col d-flex align-items-start">
+			<img src="imagenLinkedin.png" class="bi text-body-secondary flex-shrink-0 me-3" width="50em" height="50em">
+			<div>
+			  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+			  <p>Paragraph of text beneath the heading to explain the heading.</p>
+			</div>
+		  </div>
+		  <div class="col d-flex align-items-start">
+			<img src="imagenGitHub.png" class="bi text-body-secondary flex-shrink-0 me-3" width="50em" height="50em">
+			<div>
+			  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+			  <p>Paragraph of text beneath the heading to explain the heading.</p>
+			</div>
+		  </div>
+		  <div class="col d-flex align-items-start">
+			<img src="imagenWhatsapp.png" class="bi text-body-secondary flex-shrink-0 me-3" width="50em" height="50em">
+			<div>
+			  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+			  <p>Paragraph of text beneath the heading to explain the heading.</p>
+			</div>
+		  </div>
+		  <div class="col d-flex align-items-start">
+			<img src="imagenGmail.png" class="bi text-body-secondary flex-shrink-0 me-3" width="50em" height="50em">
+			<div>
+			  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+			  <p>Paragraph of text beneath the heading to explain the heading.</p>
+			</div>
+		  </div>
+		  
+		</div>
+	  </div>
 
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"

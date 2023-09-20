@@ -1,12 +1,20 @@
+:root{
+    --colorBody: #313131;
+    --colorNav: #0000b7;
+    --colorNav2: #291a45;
+    --colorPresentacion: #f9f7f7;;
+}
+
 body{
-    background-color:  #313131 ;
+    /*background-color:  #313131 ;*/
+    background-color: var(--colorBody);
 }
 
 #encabezado{
     /*background-color: #0000b7;*/
     /*background: linear-gradient(to bottom,#0000b7,#1432c1);*/
     /*background: linear-gradient(to bottom,#8319b1,#0000b7);*/
-    background: linear-gradient(to bottom,#0000b7,#291a45);
+    background: linear-gradient(to bottom,var(--colorNav),var(--colorNav2));
 }
 
 .navOpcion{
@@ -37,16 +45,14 @@ body{
     clip-path: ellipse(12% 21% at 15% 48%);
     transition-duration: 1s;
     transition-delay: 0.8s;
-    box-shadow: 3px 3px lawngreen;
 }
 
 #presentacion img:hover{
     clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
-    box-shadow: 3px 3px lightcoral;
 }
 
 #presentacion{
-    color: #f9f7f7;
+    color: var(--colorPresentacion);
     opacity: 0.4;
     /*
     animation-name: cambio;
@@ -66,22 +72,37 @@ body{
 
 #habilidades div div{
     background: none;
-    border-color: #1dee31;
+    border-color: var(--colorNav);
     opacity: 0.5;
-    transition-property: background, opacity;
+    transition-property: background, opacity, border-color;
     transition-duration: 0.3s;
+    color: var(--colorPresentacion);
 }
 
 #habilidades div div:hover{
-    opacity: 1;
-    background: linear-gradient(to right,#24ffff,#1dee31);
+    opacity: 0.8;
+    background: linear-gradient(to right,var(--colorNav),var(--colorNav2));
     border-radius: 6%;
     border-width: 0px;
+    border-color: var(--colorBody);
 }
 
 #h1Trabajos{
     color: #fe282f;
 }
+
+#accordionExample div h2 button{
+    background: linear-gradient(to bottom,var(--colorNav),var(--colorNav2));
+    color: var(--colorPresentacion);
+    transition-property: opacity;
+    transition-duration: 0.3s;
+}
+
+#accordionExample div h2 button:hover{
+    opacity: 0.8;
+}
+
+
 
 /*
 Colores: 

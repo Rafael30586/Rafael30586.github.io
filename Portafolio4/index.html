@@ -11,7 +11,7 @@
 </head>
 
 <body>
-	<header class="p-3" id="encabezado"> <!-- class = text-bg-dark -->
+	<header class="p-3 sticky-top" id="encabezado"> <!-- class = text-bg-dark -->
 		<div class="container">
 			<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
 				<a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
@@ -61,7 +61,7 @@
 	<div class="container">
 		<h1 class="text-center fw-bold mb-5" id="h1Trayectoria">Trayectoria</h1>
 		<nav>
-			<div class="nav nav-tabs" id="nav-tab" role="tablist"> <!-- cambie home por inicio-->
+			<div class="nav nav-tabs rounded-top" id="nav-tab" role="tablist"> <!-- cambie home por inicio-->
 				<button class="nav-link active" id="nav-inicio-tab" data-bs-toggle="tab" data-bs-target="#nav-inicio" type="button"
 					role="tab" aria-controls="nav-inicio" aria-selected="true">Primeros pasos</button>
 				<button class="nav-link" id="nav-busqueda-tab" data-bs-toggle="tab" data-bs-target="#nav-busqueda" type="button"
@@ -73,7 +73,7 @@
 				 <!-- cambie disabled por antes-->
 			</div>
 		</nav>
-		<div class="tab-content text-bg-dark" id="nav-tabContent">
+		<div class="tab-content bg-warning rounded-bottom" id="nav-tabContent">
 			<div class="tab-pane fade show active" id="nav-inicio" role="tabpanel" aria-labelledby="nav-inicio-tab"
 				tabindex="0">
 				<p>Cuando decidi cambiar de profesion, comence a investigar sobre programacion, ya que muchos
@@ -109,141 +109,104 @@
 		</div>
 
 	</div>
+
+	<div id="carouselExampleCaptions" class="carousel slide w-75 mx-auto fw-bold">
+		<div class="carousel-indicators">
+		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
+		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 10"></button>
+		</div>
+		<div class="carousel-inner">
+		  <div class="carousel-item active rounded" id="javaHabilidad">
+			<img src="imagenJava.png" class="w-50 ms-5" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+			  <h5 class="fw-bold">Java</h5>
+			  <p>Some representative placeholder content for the first slide.</p>
+			</div>
+		  </div>
+		  <div class="carousel-item rounded" id="inglesHabilidad">
+			<img src="imagenIngles.png" class="w-50 ms-5" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+			  <h5 class="text-warning fw-bold">Ingles</h5>
+			  <p class="text-warning">Some representative placeholder content for the second slide.</p>
+			</div>
+		  </div>
+		  <div class="carousel-item rounded" id="mysqlHabilidad">
+			<img src="imagenMySQL.png" class="w-50 ms-5" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+			  <h5 class="text-black fw-bold">MySQL</h5>
+			  <p class="text-black">Some representative placeholder content for the third slide.</p>
+			</div>
+		  </div>
+		  <div class="carousel-item rounded" id="gitHabilidad">
+			<img src="imagenGit.png" class="w-50 ms-5" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+			  <h5 class="fw-bold">Git</h5>
+			  <p>Some representative placeholder content for the third slide.</p>
+			</div>
+		  </div>
+		  <div class="carousel-item rounded" id="htmlHabilidad">
+			<img src="imagenHTML.png" class="w-50 ms-5" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+			  <h5 class="fw-bold">HTML</h5>
+			  <p>Some representative placeholder content for the third slide.</p>
+			</div>
+		  </div>
+		  <div class="carousel-item rounded" id="cssHabilidad">
+			<img src="imagenCSS.png" class="w-50 ms-5" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+			  <h5 class="fw-bold">CSS</h5>
+			  <p>Some representative placeholder content for the third slide.</p>
+			</div>
+		  </div>
+		  <div class="carousel-item rounded" id="javascriptHabilidad">
+			<img src="imagenJavascript.png" class="w-50 ms-5" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+			  <h5 class="text-danger fw-bold">Javascript</h5>
+			  <p class="text-danger">Some representative placeholder content for the third slide.</p>
+			</div>
+		  </div>
+		  <div class="carousel-item rounded" id="springbootHabilidad">
+			<img src="imagenSpringBoot.png" class="w-50 ms-5" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+			  <h5 class="text-black fw-bold">Spring Boot</h5>
+			  <p class="text-black">Some representative placeholder content for the third slide.</p>
+			</div>
+		  </div>
+		  <div class="carousel-item rounded" id="bootstrapHabilidad">
+			<img src="imagenBootstrap.png" class="w-50 ms-5" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+			  <h5 class="fw-bold">Bootstrap</h5>
+			  <p>Some representative placeholder content for the third slide.</p>
+			</div>
+		  </div>
+		  <div class="carousel-item rounded" id="reactHabilidad">
+			<img src="imagenReact.png" class="w-50 ms-5" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+			  <h5 class="text-black fw-bold">React</h5>
+			  <p class="text-black">Some representative placeholder content for the third slide.</p>
+			</div>
+		  </div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Next</span>
+		</button>
+	  </div>
 	
 	
-	<div class="container p-2" id="habilidades">
-
-		<h1 class="text-center fw-bold mb-5" id="h1Habilidades">Habilidades</h1>
-
-		<div class="row row-cols-1 row-cols-md-3 g-4 p-2">
-			<div class="col">
-				<div class="card h-100">
-					<img src="imagenGit.png" class="card-img-top" alt="Java logo">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-							additional content. This content is a little bit longer.</p>
-					</div>
-					<div class="card-footer">
-						<small class="text-body-secondary">Last updated 3 mins ago</small>
-					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="card h-100">
-					<img src="imagenIngles.png" class="card-img-top" alt="Bandera de Gran Bretaña">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">This card has supporting text below as a natural lead-in to additional
-							content.</p>
-					</div>
-					<div class="card-footer">
-						<small class="text-body-secondary">Last updated 3 mins ago</small>
-					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="card h-100">
-					<img src="imagenMySQL.png" class="card-img-top" alt="SQL logo">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-							additional content. This card has even longer content than the first to show that equal
-							height action.</p>
-					</div>
-					<div class="card-footer">
-						<small class="text-body-secondary">Last updated 3 mins ago</small>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row row-cols-1 row-cols-md-3 g-4 p-2">
-			<div class="col">
-				<div class="card h-100">
-					<img src="imagenHTML.png" class="card-img-top" alt="Git logo">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-							additional content. This content is a little bit longer.</p>
-					</div>
-					<div class="card-footer">
-						<small class="text-body-secondary">Last updated 3 mins ago</small>
-					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="card h-100">
-					<img src="imagenCSS.png" class="card-img-top" alt="HTML logo">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">This card has supporting text below as a natural lead-in to additional
-							content.</p>
-					</div>
-					<div class="card-footer">
-						<small class="text-body-secondary">Last updated 3 mins ago</small>
-					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="card h-100">
-					<img src="imagenJavascript.png" class="card-img-top" alt="CSS logo">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-							additional content. This card has even longer content than the first to show that equal
-							height action.</p>
-					</div>
-					<div class="card-footer">
-						<small class="text-body-secondary">Last updated 3 mins ago</small>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row row-cols-1 row-cols-md-3 g-4 p-2">
-			<div class="col">
-				<div class="card h-100">
-					<img src="imagenSpringBoot.png" class="card-img-top" alt="...">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-							additional content. This content is a little bit longer.</p>
-					</div>
-					<div class="card-footer">
-						<small class="text-body-secondary">Last updated 3 mins ago</small>
-					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="card h-100">
-					<img src="imagenBootstrap.png" class="card-img-top" alt="...">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">This card has supporting text below as a natural lead-in to additional
-							content.</p>
-					</div>
-					<div class="card-footer">
-						<small class="text-body-secondary">Last updated 3 mins ago</small>
-					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="card h-100">
-					<img src="imagenReact.png" class="card-img-top" alt="...">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-							additional content. This card has even longer content than the first to show that equal
-							height action.</p>
-					</div>
-					<div class="card-footer">
-						<small class="text-body-secondary">Last updated 3 mins ago</small>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	
 
 	<div class="accordion my-5 w-75 mx-auto" id="accordionExample">
 		<h1 class="text-center fw-bold mb-4" id="h1Trabajos">Trabajos</h1>
@@ -407,35 +370,37 @@
 		</div>
 	</div>
 
-	<div class="container px-4 py-5" id="icon-grid">
-		<h2 class="pb-2 border-bottom">Contacto</h2>
+	
+
+	<div class="container px-4 py-5 rounded-top" id="icon-grid">
+		<h2 class="pb-2 border-bottom fw-bold">Contacto</h2>
 	
 		<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
 		  <div class="col d-flex align-items-start">
 			<img src="imagenLinkedin.png" class="bi text-body-secondary flex-shrink-0 me-3" width="50em" height="50em">
 			<div>
-			  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+			  <h3 class="fw-bold mb-0 fs-4">Perfil</h3>
 			  <p>Paragraph of text beneath the heading to explain the heading.</p>
 			</div>
 		  </div>
 		  <div class="col d-flex align-items-start">
 			<img src="imagenGitHub.png" class="bi text-body-secondary flex-shrink-0 me-3" width="50em" height="50em">
 			<div>
-			  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+			  <h3 class="fw-bold mb-0 fs-4">Perfil</h3>
 			  <p>Paragraph of text beneath the heading to explain the heading.</p>
 			</div>
 		  </div>
 		  <div class="col d-flex align-items-start">
 			<img src="imagenWhatsapp.png" class="bi text-body-secondary flex-shrink-0 me-3" width="50em" height="50em">
 			<div>
-			  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+			  <h3 class="fw-bold mb-0 fs-4">Numero</h3>
 			  <p>Paragraph of text beneath the heading to explain the heading.</p>
 			</div>
 		  </div>
 		  <div class="col d-flex align-items-start">
 			<img src="imagenGmail.png" class="bi text-body-secondary flex-shrink-0 me-3" width="50em" height="50em">
 			<div>
-			  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+			  <h3 class="fw-bold mb-0 fs-4">Direccion</h3>
 			  <p>Paragraph of text beneath the heading to explain the heading.</p>
 			</div>
 		  </div>

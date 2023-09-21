@@ -100,7 +100,14 @@ body{
 }
 
 #accordionExample{
-    --javaColor: #00adea;
+    --javaColor: #ff2c1d;
+    --bootsTrapcolor: #4f0479;
+    --springBootColor: #04a108;
+    --SQLColor: #6c8eff;
+    --reactColor: #00a4ff;
+    --HTMLColor: #ff7a24;
+    --CSSColor: #1b51d1;
+    --javascriptColor: #ffe507;
 }
 
 #accordionExample div h2 button{
@@ -120,6 +127,38 @@ body{
 
 .javaBadge{
     background-color: var(--javaColor);
+}
+
+.HTMLBadge{
+    background-color: var(--HTMLColor);
+    color: var(--colorBody);
+}
+
+.CSSBadge{
+    background-color: var(--CSSColor);
+}
+
+.javascriptBadge{
+    background-color: var(--javascriptColor);
+    color: var(--colorBody);
+}
+
+.SQLBadge{
+    background-color: var(--SQLColor);
+    color: var(--colorBody);
+}
+
+.springBootBadge{
+    background-color: var(--springBootColor);
+}
+
+.bootstrapBadge{
+    background-color: var(--bootsTrapcolor);
+}
+
+.reactBadge{
+    background-color: var(--reactColor);
+    color: var(--colorBody);
 }
 
 

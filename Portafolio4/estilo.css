@@ -5,6 +5,13 @@
     --colorPresentacion: #f9f7f7;;
 }
 
+@keyframes AzulAMorado{
+    0% {color: #0000b7;}
+    30% {color: #30eee8;}
+    70% {color: #f7f6f6;}
+    100%{color: #291a45;}
+}
+
 body{
     /*background-color:  #313131 ;*/
     background-color: var(--colorBody);
@@ -28,15 +35,8 @@ body{
     border-radius: 25%;
 }
 
-@keyframes cambio{
-    0% {color: #0000b7;}
-    30% {color: #30eee8;}
-    70% {color: #f7f6f6;}
-    100%{color: #291a45;}
-}
-
 #presentacion h1{
-    animation-name: cambio;
+    animation-name: AzulAMorado;
     animation-duration: 5s;
     animation-iteration-count: infinite;
 }
@@ -66,29 +66,41 @@ body{
     opacity: 1;
 }
 
-#h1Habilidades{
-    color: #4aff1d;
+
+#habilidades{
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    opacity: 0.1;
+    border-radius: 1%;
+}
+
+#habilidades:hover{
+    opacity: 1;
 }
 
 #habilidades div div{
-    background: none;
+    background: var(--colorNav);
     border-color: var(--colorNav);
-    opacity: 0.5;
-    transition-property: background, opacity, border-color;
+    filter: brightness(0.1);
+    transition-property: background, filter, border-color;
     transition-duration: 0.3s;
     color: var(--colorPresentacion);
 }
 
 #habilidades div div:hover{
-    opacity: 0.8;
+    filter: brightness(1.0);
     background: linear-gradient(to right,var(--colorNav),var(--colorNav2));
-    border-radius: 6%;
+    border-radius: 3%;
     border-width: 0px;
     border-color: var(--colorBody);
 }
 
 #h1Trabajos{
     color: #fe282f;
+}
+
+#accordionExample{
+    --javaColor: #00adea;
 }
 
 #accordionExample div h2 button{
@@ -101,6 +113,15 @@ body{
 #accordionExample div h2 button:hover{
     opacity: 0.8;
 }
+
+.badge{
+    margin-left: 5px;
+}
+
+.javaBadge{
+    background-color: var(--javaColor);
+}
+
 
 
 

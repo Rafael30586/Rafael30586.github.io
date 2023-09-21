@@ -84,6 +84,13 @@ body{
     opacity: 1;
 }
 
+.titulo{
+    border-bottom-color: #686868;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    letter-spacing: 30px;
+}
+
 #nav-tab{
     background-color: var(--colorNav);
 }
@@ -134,9 +141,6 @@ body{
 
 }
 
-#h1Trabajos{
-    color: #fe282f;
-}
 
 #accordionExample{
     --javaColor: #ff2c1d;
@@ -208,6 +212,8 @@ body{
 .fs-4{
     color: var(--colorBody);
 }
+
+
 
 
 

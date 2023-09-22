@@ -76,12 +76,28 @@ body{
     animation-name: cambio;
     animation-duration: 5s;
     animation-iteration-count: infinite;*/
+    transition-duration: 0.5s;
+    transition-property: box-shadow,opacity;
 }
 
 #presentacion:hover{
     background: linear-gradient(to bottom,#686868,#313131);
     border-color: #686868;
     opacity: 1;
+    box-shadow: 5px 5px 5px  #191919 ;
+}
+
+.contenedor{
+    margin-top: 300px;
+}
+
+#trayectoria{
+    transition-duration: 0.2s;
+    transition-property: box-shadow;
+}
+
+#trayectoria:hover{
+    box-shadow: 5px 5px 5px  #191919 ;
 }
 
 .titulo{
@@ -93,6 +109,15 @@ body{
 
 #nav-tab{
     background-color: var(--colorNav);
+}
+
+#carouselExampleCaptions{
+    transition-duration: 0.2s;
+    transition-property: box-shadow;
+}
+
+#carouselExampleCaptions{
+    box-shadow: 5px 5px 5px  #191919 ;
 }
 
 #javaHabilidad{
@@ -153,6 +178,12 @@ body{
     --javascriptColor: #ffe507;
 }
 
+#accordionExample:hover{
+    box-shadow: 5px 5px 5px  #191919;
+    transition-duration: 0.2s;
+    transition-property: box-shadow;
+}
+
 #accordionExample div h2 button{
     background: linear-gradient(to bottom,var(--colorNav),var(--colorNav2));
     color: var(--colorPresentacion);
@@ -206,7 +237,10 @@ body{
 
 #icon-grid{
     background: linear-gradient(to bottom,#e61b13,#ffff85,#460087);
-    color: var(--colorBody);
+    color: var(--colorBody);/*
+    animation-name: volcan;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;*/
 }
 
 .fs-4{

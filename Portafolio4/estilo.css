@@ -84,7 +84,7 @@ body{
     background: linear-gradient(to bottom,#686868,#313131);
     border-color: #686868;
     opacity: 1;
-    box-shadow: 5px 5px 5px  #191919 ;
+    box-shadow: 20px 20px 5px  #191919 ;
 }
 
 .contenedor{
@@ -117,7 +117,7 @@ body{
 }
 
 #carouselExampleCaptions{
-    box-shadow: 5px 5px 5px  #191919 ;
+    box-shadow: 0px 5px 5px  #191919 ;
 }
 
 #javaHabilidad{
@@ -233,6 +233,11 @@ body{
 .reactBadge{
     background-color: var(--reactColor);
     color: var(--colorBody);
+}
+
+.respositorioBoton{
+    background-color: var(--colorNav);
+    color: var(--colorPresentacion);
 }
 
 #icon-grid{

@@ -60,6 +60,8 @@ body{
     clip-path: inset(98% 0 0 0);
     transition-duration: 1s;
     transition-delay: 0.8s;
+    transition-property: filter;
+    filter: brightness(0);
 }
 
 #presentacion img:hover{
@@ -67,6 +69,7 @@ body{
     animation-name: crecer;
     animation-duration: 1s;
     animation-fill-mode: both;
+    filter: brightness(1);
 }
 
 #presentacion{
@@ -105,10 +108,18 @@ body{
     border-bottom-style: solid;
     border-bottom-width: 1px;
     letter-spacing: 30px;
+    transition-property: color;
+    transition-duration: 0.4s;
+}
+
+.titulo:hover{
+    color: var(--colorNav);
+    border-bottom-color: var(--colorNav2);
 }
 
 #nav-tab{
-    background-color: var(--colorNav);
+    /*background-color: var(--colorNav);*/
+    background: linear-gradient(to bottom,var(--colorNav),var(--colorNav2));
 }
 
 #carouselExampleCaptions{

@@ -32,6 +32,12 @@ body{
     background-color: var(--colorBody);
 }
 
+a {
+    text-decoration: none;
+    text-emphasis: none;
+    color: var(--colorBody);
+}
+
 #encabezado{
     /*background-color: #0000b7;*/
     /*background: linear-gradient(to bottom,#0000b7,#1432c1);*/
@@ -257,6 +263,10 @@ body{
     animation-name: volcan;
     animation-duration: 10s;
     animation-iteration-count: infinite;*/
+}
+
+#icon-grid div div div p{
+    cursor: pointer;
 }
 
 .fs-4{

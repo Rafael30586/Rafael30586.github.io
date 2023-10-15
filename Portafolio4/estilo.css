@@ -56,7 +56,7 @@ a {
     border-radius: 25%;
 }
 
-#presentacion h1{
+#presentacion h1 {
     animation-name: AzulAMorado;
     animation-duration: 5s;
     animation-iteration-count: infinite;

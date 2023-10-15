@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<title>Portafolio 4 - versión beta</title>
+</head>
+
+<body>
+	<header class="p-3 sticky-top" id="encabezado"> <!-- class = text-bg-dark -->
+		<div class="container">
+			<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+				<a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+					<svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+						<use xlink:href="#bootstrap" />
+					</svg>
+				</a>
+
+				<ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+					<li class="navOpcion"><a href="#inicio" class="nav-link px-2 text-white">Inicio</a></li>
+					<li class="navOpcion"><a href="#trayectoria" class="nav-link px-2 text-white">Trayectoria</a></li>
+					<li class="navOpcion"><a href="#habilidades" class="nav-link px-2 text-white">Habilidades</a></li>
+					<li class="navOpcion"><a href="#trabajos" class="nav-link px-2 text-white">Trabajos</a></li>
+					<li class="navOpcion"><a href="#contacto" class="nav-link px-2 text-white">Contacto</a></li>
+				</ul>
+
+				<form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+					<input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..."
+						aria-label="Search">
+				</form>
+
+				<div class="text-end">
+					<button type="button" class="btn btn-outline-light me-2">Login</button>
+					<button type="button" class="btn btn-warning">Sign-up</button>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="px-4 py-5 m-auto my-5 text-center rounded-5 w-75" id="presentacion">
+		<img class="d-block mx-auto mb-4 rounded-top" src="fotoMia.jpg" alt="Mi foto" width="170" height="150">
+		<h1 class="display-5 fw-bold" id="nombre"><a name="inicio"></a><span>F. Rafael Alvarez</span></h1> <!-- class = text-body-emphasis-->
+		<div class="col-lg-6 mx-auto">
+			<p class="lead mb-4">Programador junior con más de un año de experiencia, enfocado en el
+				desarrollo web, principlamente backend, aunque también poseo
+				experiencia en el frontend. Puedo escribir, hablar y leer en
+				inglés, además he tenido la oportunidad de mejorar mis habilidades
+				blandas trabajando en equipo con otros programadores y en
+				experiencias laborales anteriores. Más abajo en esta misma página podrás
+				encontrar información más detallada.</p>
+			<div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+				<button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+				<button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="container contenedor" id="trayectoria">
+		<h1 class="text-center fw-bold mb-5 titulo" id="h1Trayectoria"><a name="trayectoria"></a>Trayectoria</h1>
+		<nav>
+			<div class="nav nav-tabs rounded-top" id="nav-tab" role="tablist"> <!-- cambie home por inicio-->
+				<button class="nav-link active" id="nav-inicio-tab" data-bs-toggle="tab" data-bs-target="#nav-inicio" type="button"
+					role="tab" aria-controls="nav-inicio" aria-selected="true">Primeros pasos</button>
+				<button class="nav-link" id="nav-busqueda-tab" data-bs-toggle="tab" data-bs-target="#nav-busqueda" type="button"
+					role="tab" aria-controls="nav-busqueda" aria-selected="false">Desición</button> <!-- cambie profile por busqueda-->
+				<button class="nav-link" id="nav-beca-tab" data-bs-toggle="tab" data-bs-target="#nav-beca" type="button" role="tab"
+					aria-controls="nav-beca" aria-selected="false">Argentina programa</button> <!-- cambie contact por beca-->
+				<button class="nav-link" id="nav-anterior-tab" data-bs-toggle="tab" data-bs-target="#nav-anterior" type="button" role="tab"
+					aria-controls="nav-anterior" aria-selected="false">Antes de la programación</button> <!-- cambie beca por anterior-->
+				 <!-- cambie disabled por antes-->
+			</div>
+		</nav>
+		<div class="tab-content bg-warning rounded-bottom" id="nav-tabContent">
+			<div class="tab-pane fade show active" id="nav-inicio" role="tabpanel" aria-labelledby="nav-inicio-tab"
+				tabindex="0">
+				<p>Cuando decidí cambiar de profesión, comence a investigar sobre programación, ya que muchos
+					lo recomendaban y ademas siempre me han gustado las computadoras y los video juegos.
+					Basto con un video de diez minutos de un programador experimentado en youtube sobre las bases
+					de la programación para convencerme de que era lo que queria hacer y de que debia haber comenzado
+					mucho antes en este apasionante mundo. Asi es como decidi empezar a estudiar c++ de manera
+					autodidacta. Este lenguaje fue el que me sirvió para entender la lógica de programación</p>
+			</div>
+			<div class="tab-pane fade" id="nav-busqueda" role="tabpanel" aria-labelledby="nav-busqueda-tab" tabindex="0">
+				<p>Mientras estudiaba c++ y buscaba información sobre la salida laboral de los diferentes lenguajes, me
+					di cuenta de que no era recomendable seguir aprendiendo este lenguage en profundidad, entonces decidi
+					conocer sobre java y python, luego comence a estudiar frontend, depues bases de datos SQL, asi es
+					como me di cuenta de que queria trabajar del lado del backend o en el desarrollo de aplicaciones, por
+					lo que considere adecuado especializarme en el lenguaje Java</p>
+			</div>
+			<div class="tab-pane fade" id="nav-beca" role="tabpanel" aria-labelledby="nav-beca-tab" tabindex="0">
+				<p>Mientras continuaba averiguando y especializandome en diferentes lenguajes y tecnologias, tuve la
+					suerte de obtener una beca para ingresar a Argentina programa. Asi es como la empresa Egg me
+					proveyó de salas de zoom, apuntes y videos para seguir estudiando, pero esta vez con compañeros
+					de equipo quen tenian como objetivo aprender a programar al igual que yo. Gracias a esta oprtunidad
+					que supe aprovechar he podido aprender git y adquirir muchos otros conocimientos que habia pasado
+					por alto mientras estudiaba como autodidacta (JPA, uml, DAO, etc)</p>
+			</div>
+			<div class="tab-pane fade" id="nav-anterior" role="tabpanel" aria-labelledby="nav-anterior-tab" tabindex="0">
+				<p>Antes de programar habia dedicado mi vida academica y laboral a las ciencias exactas, la 
+					educacion, la industria de los alimentos y el laboratorio de ciencias naturales. Estas areas no 
+					me proporcionaban de los beneficios que me convenian, por lo que era necesario cambiar. Sabia que 
+					queria trabajar con computadoras, pero por falta de información no se me habia ocurrido que la 
+					programación era el camino que queria transitar.</p>
+			</div>
+			
+		</div>
+
+	</div>
+
+	<div id="carouselExampleCaptions" class="carousel slide w-75 mx-auto fw-bold contenedor">
+		<h1 class="text-center fw-bold mb-5 titulo"><a name="habilidades"></a>Habilidades</h1>
+		<div class="carousel-indicators">
+		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
+		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 10"></button>
+		</div>
+		<div class="carousel-inner">
+		  <div class="carousel-item active rounded" id="javaHabilidad">
+			<img src="imagenJava.png" class="w-50 ms-5" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+			  <h5 class="fw-bold">Java</h5>
+			  <p>El lenguaje de programación con el que mas experiencia tengo por mucho. </p>
+			</div>
+		  </div>
+		  <div class="carousel-item rounded" id="inglesHabilidad">
+			<img src="imagenIngles2.png" class="w-50 ms-5" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+			  <h5 class="text-warning fw-bold">Ingles</h5>
+			  <p class="text-warning">Gran parte del entretenimiento que consumo esta en completo ingles</p>
+			</div>
+		  </div>
+		  <div class="carousel-item rounded" id="mysqlHabilidad">
+			<img src="imagenMySQL.png" class="w-50 ms-5" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+			  <h5 class="text-black fw-bold">MySQL</h5>
+			  <p class="text-black">He realizado tablas, bases de datos y muchisimas consultas</p>
+			</div>
+		  </div>
+		  <div class="carousel-item rounded" id="gitHabilidad">
+			<img src="imagenGit.png" class="w-50 ms-5" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+			  <h5 class="fw-bold">Git</h5>
+			  <p>Utilizo este controlador de versiones en todos mis proyectos de programación y desarrollo</p>
+			</div>
+		  </div>
+		  <div class="carousel-item rounded" id="htmlHabilidad">
+			<img src="imagenHTML.png" class="w-50 ms-5" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+			  <h5 class="fw-bold">HTML</h5>
+			  <p>Lenguaje obligatorio para toda persona que se dedique al desarrollo web</p>
+			</div>
+		  </div>
+		  <div class="carousel-item rounded" id="cssHabilidad">
+			<img src="imagenCSS.png" class="w-50 ms-5" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+			  <h5 class="fw-bold">CSS</h5>
+			  <p>Poseo experiencia con flex-box, animaciones simples y responsive design</p>
+			</div>
+		  </div>
+		  <div class="carousel-item rounded" id="javascriptHabilidad">
+			<img src="imagenJavascript2.png" class="w-50 ms-5" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+			  <h5 class="text-danger fw-bold">Javascript</h5>
+			  <p class="text-danger">Lenguaje muy importante para concetar frontend con backend</p>
+			</div>
+		  </div>
+		  <div class="carousel-item rounded" id="springbootHabilidad">
+			<img src="imagenSpringBoot.png" class="w-50 ms-5" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+			  <h5 class="text-black fw-bold">Spring Boot</h5>
+			  <p class="text-black">Por ahora poca experiencia con este framework. Tengo como 
+				objetivo ser un experto en el mismo</p>
+			</div>
+		  </div>
+		  <div class="carousel-item rounded" id="bootstrapHabilidad">
+			<img src="imagenBootstrap.png" class="w-50 ms-5" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+			  <h5 class="fw-bold">Bootstrap</h5>
+			  <p>Una de las ultimas habilidades en aprender. Me ha sido de mucha utilidad en el 
+				desarrollo de este portafolio</p>
+			</div>
+		  </div>
+		  <div class="carousel-item rounded" id="reactHabilidad">
+			<img src="imagenReact2.png" class="w-50 ms-5" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+			  <h5 class="text-black fw-bold">React</h5>
+			  <p class="text-black">Por ahora muy poca experiencia</p>
+			</div>
+		  </div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Anterior</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Siguiente</span>
+		</button>
+	  </div>
+	
+	
+	
+	  
+	<div class="accordion w-75 mx-auto contenedor" id="accordionExample"> <!--my-5-->
+		
+		<h1 class="text-center fw-bold mb-5 titulo" id="h1Trabajos"><a name="trabajos"></a>Trabajos</h1>
+		<div class="accordion-item">
+			<h2 class="accordion-header">
+				<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+					aria-expanded="true" aria-controls="collapseOne">
+					Porcentajes <span class="badge javaBadge">Java</span>
+				</button>
+			</h2>
+			<div id="collapseOne" class="accordion-collapse collapse show bg-warning" data-bs-parent="#accordionExample">
+				<div class="accordion-body">
+					Aplicación desarrollada con el paquete swing de java que permite la realización de tres tipos de 
+					calculos muy sencillos pero que pueden ser de utilidad para comeciantes. El objetivo principal
+					de esta aplicación tiene mucho mas que ver con aprender a realizar interfaces graficas en java
+					que con la funcionalidad en si.
+					<a class="btn btn-sm respositorioBoton" href="https://github.com/Rafael30586/PorcentajeCalculosEX" target="_blank">Ir al repositorio</a>
+				</div>
+			</div>
+		</div>
+		<div class="accordion-item">
+			<h2 class="accordion-header">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+					data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					Números romanos <span class="badge javaBadge">Java</span>
+				</button>
+			</h2>
+			<div id="collapseTwo" class="accordion-collapse collapse bg-warning" data-bs-parent="#accordionExample">
+				<div class="accordion-body">
+					El desarrollo de esta aplicación (al igual que la anterior), tuvo como objetivo otorgarme
+					experiencia en la realizacion de interfaces graficas con java. El usuario debe ingresar un
+					numero y con solo presionar un botón se mostrara el equivalente a numero romano.
+					<a class="btn btn-sm respositorioBoton" href="https://github.com/Rafael30586/NumerosRomanosEX" target="_blank">Ir al repositorio</a>
+				</div>
+			</div>
+		</div>
+		<div class="accordion-item">
+			<h2 class="accordion-header">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+					data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					Conexión con API de Marvel <span class="badge HTMLBadge">HTML</span> 
+					<span class="badge CSSBadge">CSS</span>
+					<span class="badge javascriptBadge">Javascript</span>
+				</button>
+			</h2>
+			<div id="collapseThree" class="accordion-collapse collapse bg-warning" data-bs-parent="#accordionExample">
+				<div class="accordion-body">
+					Esta pagina hecha con html, css y javascript que no destaca por su estetica me permitió
+					comprender mejor la conexión que existe entre el frontend y el backend. Tal y como lo dice el nombre
+					se conecta a la API de Marvel. Consiste en muchas paginas con los personajes de este universo y un
+					código. El usuario debe copiar dicho codigo en un cuadro de texto; luego presionar un botón 
+					para que se muestre por pantalla una lista de comics en los cuales el personaje elegido hizo
+					acto de presencia.
+					<a class="btn btn-sm respositorioBoton" href="https://rafael30586.github.io/APIMarvelConexion/" target="_blank">Ir a la pagina</a>
+				</div>
+			</div>
+		</div>
+		<div class="accordion-item">
+			<h2 class="accordion-header">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+					data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+					Calculadora <span class="badge javaBadge">Java</span>
+				</button>
+			</h2>
+			<div id="collapseFour" class="accordion-collapse collapse bg-warning" data-bs-parent="#accordionExample">
+				<div class="accordion-body">
+					Calculadora convencional que, ademas de cumplir con su función, es capaz de modificar
+					su apariencia con solo presionar un boton. Tiene los clasicos tema oscuro y claro, pero ademas
+					tiene otros temas mas coloridos para deleite del usuario.
+					<a class="btn btn-sm respositorioBoton" href="https://github.com/Rafael30586/CalculadoraEX" target="_blank">Ir al repositorio</a>
+				</div>
+			</div>
+		</div>
+		<div class="accordion-item">
+			<h2 class="accordion-header">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+					data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+					Portafolio 3.0.0 <span class="badge HTMLBadge">HTML</span>
+					<span class="badge CSSBadge">CSS</span>
+					<span class="badge javascriptBadge">Javascript</span>
+				</button>
+			</h2>
+			<div id="collapseFive" class="accordion-collapse collapse bg-warning" data-bs-parent="#accordionExample">
+				<div class="accordion-body">
+					La versión 3 de mi portafolio. Esta hecho solamente con html, css y javascript y tiene responsive 
+					design, pudiendo adaptarse con eficiencia a dispositivos móbiles.
+					<a class="btn btn-sm respositorioBoton" href="https://rafael30586.github.io/Portafolio3/" target="_blank">Ir a la pagina</a>
+				</div>
+			</div>
+		</div>
+		<div class="accordion-item">
+			<h2 class="accordion-header">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+					data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+					Base de datos de video juegos <span class="badge javaBadge">Java</span>
+					<span class="badge SQLBadge">SQL</span>
+				</button>
+			</h2>
+			<div id="collapseSix" class="accordion-collapse collapse bg-warning" data-bs-parent="#accordionExample">
+				<div class="accordion-body">
+					Esta aplicación aprovecha las clases e interfaces de JDBC para conectarse a una base de datos 
+					de video juegos SQL que consiste en tres tablas interrelacionadas por medio de llaves foraneas. 
+					Tiene varias opciones que le permitiran al usuario filtrar las consultas por nombre, 
+					plataforma y desarrolladora. Los resultados se mostraran en una tabla.
+					<a class="btn btn-sm respositorioBoton" href="https://github.com/Rafael30586/ConsultasVJ" target="_blank">Ir al repositorio</a>
+				</div>
+			</div>
+		</div>
+		<div class="accordion-item">
+			<h2 class="accordion-header">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+					data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+					Visualizador de imágenes <span class="badge HTMLBadge">HTML</span>
+					<span class="badge CSSBadge">CSS</span>
+					<span class="badge javascriptBadge">Javascript</span>
+					<span class="badge bootstrapBadge">Bootstrap</span>
+					<span class="badge reactBadge">React</span>
+				</button>
+			</h2>
+			<div id="collapseSeven" class="accordion-collapse collapse bg-warning" data-bs-parent="#accordionExample">
+				<div class="accordion-body">
+					En desarrollo
+				</div>
+			</div>
+		</div>
+		<div class="accordion-item">
+			<h2 class="accordion-header">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+					data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+					Conexión con API de Rick and Morty <span class="badge HTMLBadge">HTML</span>
+					<span class="badge CSSBadge">CSS</span>
+					<span class="badge javascriptBadge">Javascript</span>
+					<span class="badge bootstrapBadge">Bootstrap</span>
+					<span class="badge reactBadge">React</span>
+				</button>
+			</h2>
+			<div id="collapseEight" class="accordion-collapse collapse bg-warning" data-bs-parent="#accordionExample">
+				<div class="accordion-body">
+					En desarrollo
+				</div>
+			</div>
+		</div>
+		<div class="accordion-item">
+			<h2 class="accordion-header">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+					data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+					Página con Springboot <span class="badge javaBadge">Java</span>
+					<span class="badge springBootBadge">Spring Boot</span>
+					<span class="badge HTMLBadge">HTML</span>
+					<span class="badge CSSBadge">CSS</span>
+					<span class="badge javascriptBadge">Javascript</span>
+					<span class="badge bootstrapBadge">Bootstrap</span>
+					<span class="badge SQLBadge">SQL</span>
+				</button>
+			</h2>
+			<div id="collapseNine" class="accordion-collapse collapse bg-warning" data-bs-parent="#accordionExample">
+				<div class="accordion-body">
+					En desarrollo
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+
+	<div class="container px-4 py-5 rounded-top contenedor" id="icon-grid">
+		<h2 class="pb-2 border-bottom fw-bold"><a name="contacto"></a>Contacto</h2>
+	
+		<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+		  <div class="col d-flex align-items-start contacto">
+			<img src="imagenLinkedin.png" class="bi text-body-secondary flex-shrink-0 me-3" width="50em" height="50em">
+			<div>
+			  <h3 class="fw-bold mb-0 fs-4">Linkedin</h3>
+			  <p><a href="https://www.linkedin.com/in/fernando-rafael-alvarez-99a90454/">Ir al perfil</a></p>
+			</div>
+		  </div>
+		  <div class="col d-flex align-items-start contacto">
+			<img src="imagenGitHub.png" class="bi text-body-secondary flex-shrink-0 me-3" width="50em" height="50em">
+			<div>
+			  <h3 class="fw-bold mb-0 fs-4">Github</h3>
+			  <p><a href="https://github.com/Rafael30586">Ir al perfil</a></p>
+			</div>
+		  </div>
+		  <div class="col d-flex align-items-start contacto">
+			<img src="imagenWhatsapp.png" class="bi text-body-secondary flex-shrink-0 me-3" width="50em" height="50em">
+			<div>
+			  <h3 class="fw-bold mb-0 fs-4">Whatsapp</h3>
+			  <p onclick="mostrarNumero()">Ver numero</p>
+			</div>
+		  </div>
+		  <div class="col d-flex align-items-start contacto">
+			<img src="imagenGmail.png" class="bi text-body-secondary flex-shrink-0 me-3" width="50em" height="50em">
+			<div>
+			  <h3 class="fw-bold mb-0 fs-4">Gmail</h3>
+			  <p onclick="mostrarCorreo()">Ver direccion</p>
+			</div>
+		  </div>
+		  
+		</div>
+	  </div>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+		crossorigin="anonymous"></script>
+	
+	<script type="text/javascript" src="codigo.js"></script>
+</body>
+
+</html>

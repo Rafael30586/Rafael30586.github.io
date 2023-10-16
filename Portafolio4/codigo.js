@@ -16,11 +16,14 @@ function mostrarRol(){
     //nombre.removeChild("textoEncabezadoOriginal");
     nombre.removeChild(textoEncabezadoOriginal);
 	nombre.appendChild(textoEncabezado);
+    nombre.removeAttribute("id")
+    nombre.setAttribute("id","rol");
 }
 
 function mostrarNombre(){
     nombre.removeChild(textoEncabezado);
 	nombre.appendChild(textoEncabezadoOriginal);
+    nombre.setAttribute("id","nombre")
 }
 
 function mostrarNombre1(){

@@ -86,15 +86,32 @@ a {
     animation-iteration-count: infinite;
 }*/
 
-#tema{
+.tema{
     cursor: pointer;
-    filter:brightness(60%);
+    /*filter:brightness(60%);*/
     transition-property: filter;
     transition-duration: 0.3s;
+    opacity: 1;
+    /*filter: invert(100%);*/
 }
 
-#tema:hover{
-    filter:brightness(110%);
+.tema2{
+    cursor: pointer;
+    /*filter:brightness(60%);*/
+    transition-property: filter;
+    transition-duration: 0.3s;
+    filter: invert(100%);
+    opacity: 1;
+}
+
+.tema:hover{
+    /*filter:brightness(110%);*/
+    opacity: 0.9;
+}
+
+.tema2:hover{
+    /*filter:brightness(110%);*/
+    opacity: 0.9;
 }
 
 #nombre{

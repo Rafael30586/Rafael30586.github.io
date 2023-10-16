@@ -91,8 +91,8 @@ function cambiarColores(){
 
     switch(estilo){
         case 1: body.style.backgroundColor = "#313131";
-        cambioEstilo.removeAttribute("class");
-        cambioEstilo.setAttribute("class","btn btn-outline-light me-2");
+        //cambioEstilo.removeAttribute("class");
+        //cambioEstilo.setAttribute("class","btn btn-outline-light me-2");
         contactos.removeAttribute("class");
         contactos.setAttribute("class","container px-4 py-5 rounded-top contenedor contactos");
         contactoTitulo.removeAttribute("class");
@@ -105,12 +105,14 @@ function cambiarColores(){
         contenedorHabilidades.setAttribute("class","carousel slide w-75 mx-auto fw-bold contenedor contenedorHabilidades");
         contenedorTrabajos.removeAttribute("class");
         contenedorTrabajos.setAttribute("class","accordion w-75 mx-auto contenedor contenedorTrabajos");
+        botonTema.removeAttribute("class");
+        botonTema.setAttribute("class","tema");
         break;
         case 2: //navBar.removeAttribute("id");
         //navBar.setAttribute("id","encabezado2")
         body.style.backgroundColor = "#fdffc4";
-        cambioEstilo.removeAttribute("class");
-        cambioEstilo.setAttribute("class","btn btn-outline-warning me-2");
+        //cambioEstilo.removeAttribute("class");
+        //cambioEstilo.setAttribute("class","btn btn-outline-warning me-2");
         contactos.removeAttribute("class");
         contactos.setAttribute("class","container px-4 py-5 rounded-top contenedor contactos2");
         contactoTitulo.removeAttribute("class");
@@ -125,6 +127,8 @@ function cambiarColores(){
         contenedorHabilidades.setAttribute("class","carousel slide w-75 mx-auto fw-bold contenedor contenedorHabilidades2");
         contenedorTrabajos.removeAttribute("class");
         contenedorTrabajos.setAttribute("class","accordion w-75 mx-auto contenedor contenedorTrabajos2");
+        botonTema.removeAttribute("class");
+        botonTema.setAttribute("class","tema2");
         break;
     }
 

@@ -14,6 +14,7 @@ const presentacion = document.getElementById("presentacion");
 const contenedorTrayectoria = document.getElementById("trayectoria");
 const contenedorHabilidades = document.getElementById("carouselExampleCaptions");
 const contenedorTrabajos = document.getElementById("accordionExample");
+const botonTema = document.getElementById("tema");
 //titulos = document.querySelectorAll(".titulo");
 const textoEncabezado = document.createTextNode("Desarrollador Java");
 const textoEncabezadoOriginal = document.createTextNode("F. Rafael Alvarez");
@@ -136,4 +137,5 @@ mostrarNombre1();
 
 nombre.addEventListener("mouseover",mostrarRol)
 nombre.addEventListener("mouseout",mostrarNombre);
-cambioEstilo.addEventListener("click",cambiarColores);
+//cambioEstilo.addEventListener("click",cambiarColores);
+botonTema.addEventListener("click",cambiarColores);

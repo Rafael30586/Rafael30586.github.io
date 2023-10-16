@@ -86,6 +86,17 @@ a {
     animation-iteration-count: infinite;
 }*/
 
+#tema{
+    cursor: pointer;
+    filter:brightness(60%);
+    transition-property: filter;
+    transition-duration: 0.3s;
+}
+
+#tema:hover{
+    filter:brightness(110%);
+}
+
 #nombre{
     animation-name: AzulAMorado;
     animation-duration: 5s;

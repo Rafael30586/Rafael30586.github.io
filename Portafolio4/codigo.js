@@ -6,11 +6,15 @@ const body = document.getElementById("body");
 const navTab = document.getElementById("nav-tab");
 const contactos = document.getElementById("icon-grid");
 const contactoTitulo = document.getElementById("contactoTitulo");
-let titulos = document.getElementsByClassName("titulo"); 
+//let titulos = document.getElementsByClassName("titulo"); 
 let titulo1 = document.getElementById("h1Trayectoria");
 let titulo2 = document.getElementById("h1Habilidades");
 let titulo3 = document.getElementById("h1Trabajos");
-titulos = document.querySelectorAll(".titulo");
+const presentacion = document.getElementById("presentacion");
+const contenedorTrayectoria = document.getElementById("trayectoria");
+const contenedorHabilidades = document.getElementById("carouselExampleCaptions");
+const contenedorTrabajos = document.getElementById("accordionExample");
+//titulos = document.querySelectorAll(".titulo");
 const textoEncabezado = document.createTextNode("Desarrollador Java");
 const textoEncabezadoOriginal = document.createTextNode("F. Rafael Alvarez");
 let estilo = 1;
@@ -92,6 +96,14 @@ function cambiarColores(){
         contactos.setAttribute("class","container px-4 py-5 rounded-top contenedor contactos");
         contactoTitulo.removeAttribute("class");
         contactoTitulo.setAttribute("class","pb-2 border-bottom fw-bold");
+        presentacion.removeAttribute("class");
+        presentacion.setAttribute("class","px-4 py-5 m-auto my-5 text-center rounded-5 w-75 presentacion");
+        contenedorTrayectoria.removeAttribute("class");
+        contenedorTrayectoria.setAttribute("class","container contenedor contenedorTrayectoria");
+        contenedorHabilidades.removeAttribute("class");
+        contenedorHabilidades.setAttribute("class","carousel slide w-75 mx-auto fw-bold contenedor contenedorHabilidades");
+        contenedorTrabajos.removeAttribute("class");
+        contenedorTrabajos.setAttribute("class","accordion w-75 mx-auto contenedor contenedorTrabajos");
         break;
         case 2: //navBar.removeAttribute("id");
         //navBar.setAttribute("id","encabezado2")
@@ -104,6 +116,14 @@ function cambiarColores(){
         contactoTitulo.setAttribute("class","pb-2 border-bottom fw-bold border-secondary");
         //navTab.removeAttribute("class");
         //navTab.setAttribute("class","nav nav-tabs rounded-top trayectoriaItems2 --bs-danger-text-emphasis");
+        presentacion.removeAttribute("class");
+        presentacion.setAttribute("class","px-4 py-5 m-auto my-5 text-center rounded-5 w-75 presentacion2");
+        contenedorTrayectoria.removeAttribute("class");
+        contenedorTrayectoria.setAttribute("class","container contenedor contenedorTrayectoria2");
+        contenedorHabilidades.removeAttribute("class");
+        contenedorHabilidades.setAttribute("class","carousel slide w-75 mx-auto fw-bold contenedor contenedorHabilidades2");
+        contenedorTrabajos.removeAttribute("class");
+        contenedorTrabajos.setAttribute("class","accordion w-75 mx-auto contenedor contenedorTrabajos2");
         break;
     }
 

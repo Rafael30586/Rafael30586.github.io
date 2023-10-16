@@ -41,7 +41,7 @@
 		</div>
 	</header>
 
-	<div class="px-4 py-5 m-auto my-5 text-center rounded-5 w-75" id="presentacion">
+	<div class="px-4 py-5 m-auto my-5 text-center rounded-5 w-75 presentacion" id="presentacion">
 		<img class="d-block mx-auto mb-4 rounded-top" src="fotoMia.jpg" alt="Mi foto" width="170" height="150">
 		<h1 class="display-5 fw-bold" id="nombre"><a name="inicio"></a></h1> <!-- class = text-body-emphasis-->
 		<div class="col-lg-6 mx-auto">
@@ -53,13 +53,13 @@
 				experiencias laborales anteriores. Más abajo en esta misma página podrás
 				encontrar información más detallada.</p>
 			<div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-				<button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-				<button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+				<!--<button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+				<button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>-->
 			</div>
 		</div>
 	</div>
 
-	<div class="container contenedor" id="trayectoria">
+	<div class="container contenedor contenedorTrayectoria" id="trayectoria">
 		<h1 class="text-center fw-bold mb-5 titulo" id="h1Trayectoria"><a name="trayectoria"></a>Trayectoria</h1>
 		<nav>
 			<div class="nav nav-tabs rounded-top trayectoriaItems" id="nav-tab" role="tablist"> <!-- cambie home por inicio-->
@@ -111,7 +111,7 @@
 
 	</div>
 
-	<div id="carouselExampleCaptions" class="carousel slide w-75 mx-auto fw-bold contenedor">
+	<div id="carouselExampleCaptions" class="carousel slide w-75 mx-auto fw-bold contenedor contenedorHabilidades">
 		<h1 class="text-center fw-bold mb-5 titulo" id="h1Habilidades"><a name="habilidades"></a>Habilidades</h1>
 		<div class="carousel-indicators">
 		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -212,17 +212,17 @@
 	
 	
 	  
-	<div class="accordion w-75 mx-auto contenedor" id="accordionExample"> <!--my-5-->
+	<div class="accordion w-75 mx-auto contenedor contenedorTrabajos" id="accordionExample"> <!--my-5-->
 		
 		<h1 class="text-center fw-bold mb-5 titulo" id="h1Trabajos"><a name="trabajos"></a>Trabajos</h1>
 		<div class="accordion-item">
 			<h2 class="accordion-header">
-				<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-					aria-expanded="true" aria-controls="collapseOne">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+					aria-expanded="false" aria-controls="collapseOne">
 					Porcentajes <span class="badge javaBadge">Java</span>
 				</button>
 			</h2>
-			<div id="collapseOne" class="accordion-collapse collapse show bg-warning" data-bs-parent="#accordionExample">
+			<div id="collapseOne" class="accordion-collapse collapse bg-warning" data-bs-parent="#accordionExample">
 				<div class="accordion-body">
 					Aplicación desarrollada con el paquete swing de java que permite la realización de tres tipos de 
 					calculos muy sencillos pero que pueden ser de utilidad para comeciantes. El objetivo principal

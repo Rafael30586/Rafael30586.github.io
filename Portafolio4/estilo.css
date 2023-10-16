@@ -76,8 +76,8 @@ a {
 .navOpcion:hover{
     opacity: 0.6;
     /*background-color: #bb1afb;*/
-    background: linear-gradient(to bottom,#0000b7,#bb1afb);
-    border-radius: 25%;
+    /*background: linear-gradient(to bottom,#0000b7,#bb1afb);
+    border-radius: 25%;*/
 }
 /*
 #presentacion h1 {
@@ -115,7 +115,7 @@ a {
     filter: brightness(1);
 }
 
-#presentacion{
+.presentacion{
     color: var(--colorPresentacion);
     opacity: 0.4;
     /*
@@ -126,25 +126,49 @@ a {
     transition-property: box-shadow,opacity;
 }
 
-#presentacion:hover{
+.presentacion2{
+    color: var(--colorBody);
+    opacity: 0.4;
+    transition-duration: 0.5s;
+    transition-property: box-shadow,opacity;
+}
+
+.presentacion:hover{
     background: linear-gradient(to bottom,#686868,#313131);
     border-color: #686868;
     opacity: 1;
     box-shadow: 20px 20px 5px  #191919 ;
 }
 
+.presentacion2:hover{
+    background: linear-gradient(to bottom,#686868,#fdffc4);
+    border-color: #686868;
+    opacity: 1;
+    box-shadow: 20px 20px 5px  #dadd7e ;
+}
+
 .contenedor{
     margin-top: 300px;
 }
 
-#trayectoria{
+.contenedorTrayectoria{
     transition-duration: 0.2s;
     transition-property: box-shadow;
 }
 
-#trayectoria:hover{
-    box-shadow: 5px 5px 5px  #191919 ;
+.contenedorTrayectoria2{
+    transition-duration: 0.2s;
+    transition-property: box-shadow;
 }
+
+.contenedorTrayectoria:hover{
+    box-shadow: 5px 5px 5px  #191919;
+}
+
+.contenedorTrayectoria2:hover{
+    box-shadow: 5px 5px 5px  #dadd7e;
+}
+
 
 .titulo{
     border-bottom-color: #686868;
@@ -184,13 +208,22 @@ a {
     background: linear-gradient(to bottom, var(--colorNav3), var(--colorNav4));
 }
 
-#carouselExampleCaptions{
+.contenedorHabilidades{
     transition-duration: 0.2s;
     transition-property: box-shadow;
 }
 
-#carouselExampleCaptions{
-    box-shadow: 0px 5px 5px  #191919 ;
+.contenedorHabilidades2{
+    transition-duration: 0.2s;
+    transition-property: box-shadow;
+}
+
+.contenedorHabilidades:hover{
+    box-shadow: 5px 5px 5px  #191919;
+}
+
+.contenedorHabilidades2:hover{
+    box-shadow: 5px 5px 5px  #dadd7e;
 }
 
 #javaHabilidad{
@@ -251,8 +284,14 @@ a {
     --javascriptColor: #ffe507;
 }
 
-#accordionExample:hover{
+.contenedorTrabajos:hover{
     box-shadow: 5px 5px 5px  #191919;
+    transition-duration: 0.2s;
+    transition-property: box-shadow;
+}
+
+.contenedorTrabajos2:hover{
+    box-shadow: 5px 5px 5px #dadd7e;
     transition-duration: 0.2s;
     transition-property: box-shadow;
 }

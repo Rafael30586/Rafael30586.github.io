@@ -155,7 +155,22 @@ a {
     transition-duration: 0.4s;
 }
 
+.titulo2{
+    border-bottom-color:  #fcff94;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    letter-spacing: 30px;
+    transition-property: color;
+    transition-duration: 0.4s;
+    color: #dadd7e;
+}
+
 .titulo:hover{
+    color: var(--colorNav);
+    border-bottom-color: var(--colorNav2);
+}
+
+.titulo2:hover{
     color: var(--colorNav);
     border-bottom-color: var(--colorNav2);
 }
@@ -310,6 +325,7 @@ a {
     background: linear-gradient(to bottom,#69d151,var(--colorPresentacion),#00a0ff);
     color: var(--colorBody);
 }
+
 
 #icon-grid div div div p{
     cursor: pointer;

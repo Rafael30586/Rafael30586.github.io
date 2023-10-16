@@ -1,8 +1,12 @@
 :root{
+    /*Estilo 1*/
     --colorBody: #313131;
     --colorNav: #0000b7;
     --colorNav2: #291a45;
-    --colorPresentacion: #f9f7f7;;
+    --colorPresentacion: #f9f7f7;
+    /*Estilo 2*/
+    --colorNav3:  #c11207;
+    --colorNav4:  #C70039 ;  
 }
 
 @keyframes AzulAMorado{
@@ -59,6 +63,10 @@ a {
     /*background: linear-gradient(to bottom,#0000b7,#1432c1);*/
     /*background: linear-gradient(to bottom,#8319b1,#0000b7);*/
     background: linear-gradient(to bottom,var(--colorNav),var(--colorNav2));
+}
+
+#encabezado2{
+    background: linear-gradient(to bottom, var(--colorNav3), var(--colorNav4));
 }
 
 .navOpcion{

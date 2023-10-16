@@ -160,9 +160,13 @@ a {
     border-bottom-color: var(--colorNav2);
 }
 
-#nav-tab{
+.trayectoriaItems{
     /*background-color: var(--colorNav);*/
     background: linear-gradient(to bottom,var(--colorNav),var(--colorNav2));
+}
+
+.trayectoriaItems2{
+    background: linear-gradient(to bottom, var(--colorNav3), var(--colorNav4));
 }
 
 #carouselExampleCaptions{
@@ -294,12 +298,17 @@ a {
     color: var(--colorPresentacion);
 }
 
-#icon-grid{
+.contactos{
     background: linear-gradient(to bottom,#e61b13,#ffff85,#460087);
     color: var(--colorBody);/*
     animation-name: volcan;
     animation-duration: 10s;
     animation-iteration-count: infinite;*/
+}
+
+.contactos2{
+    background: linear-gradient(to bottom,#69d151,var(--colorPresentacion),#00a0ff);
+    color: var(--colorBody);
 }
 
 #icon-grid div div div p{

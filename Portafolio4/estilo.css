@@ -152,21 +152,23 @@ a {
 }
 
 .contenedorTrayectoria{
-    transition-duration: 0.2s;
+    transition-duration: 0.5s;
     transition-property: box-shadow;
 }
 
 .contenedorTrayectoria2{
-    transition-duration: 0.2s;
+    transition-duration: 0.5s;
     transition-property: box-shadow;
 }
 
 .contenedorTrayectoria:hover{
     box-shadow: 5px 5px 5px  #191919;
+    background: linear-gradient(to bottom,#686868,#313131);
 }
 
 .contenedorTrayectoria2:hover{
     box-shadow: 5px 5px 5px  #dadd7e;
+    background: linear-gradient(to bottom,#686868,#fdffc4);
 }
 
 
@@ -220,10 +222,12 @@ a {
 
 .contenedorHabilidades:hover{
     box-shadow: 5px 5px 5px  #191919;
+    background: linear-gradient(to bottom,#686868,#313131);
 }
 
 .contenedorHabilidades2:hover{
     box-shadow: 5px 5px 5px  #dadd7e;
+    background: linear-gradient(to bottom,#686868,#fdffc4);
 }
 
 #javaHabilidad{
@@ -288,12 +292,14 @@ a {
     box-shadow: 5px 5px 5px  #191919;
     transition-duration: 0.2s;
     transition-property: box-shadow;
+    background: linear-gradient(to bottom,#686868,#313131);
 }
 
 .contenedorTrabajos2:hover{
     box-shadow: 5px 5px 5px #dadd7e;
     transition-duration: 0.2s;
     transition-property: box-shadow;
+    background: linear-gradient(to bottom,#686868,#fdffc4);
 }
 
 #accordionExample div h2 button{

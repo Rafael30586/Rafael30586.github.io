@@ -209,6 +209,18 @@ a {
     transition-duration: 0.4s;
 }
 
+@media only screen and (orientation: portrait), (max-width:700px){
+    .titulo{
+        border-bottom-color: #686868;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        letter-spacing: 10px;
+        transition-property: color;
+        transition-duration: 0.4s;
+        font-size: xx-large;
+    }
+}
+
 .titulo2{
     border-bottom-color:  #fcff94;
     border-bottom-style: solid;
@@ -217,6 +229,19 @@ a {
     transition-property: color;
     transition-duration: 0.4s;
     color: #dadd7e;
+}
+
+@media only screen and (orientation: portrait), (max-width:700px){
+    .titulo2{
+        border-bottom-color: #fcff94;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        letter-spacing: 10px;
+        transition-property: color;
+        transition-duration: 0.4s;
+        color: #dadd7e;
+        font-size: xx-large;
+    }
 }
 
 .titulo:hover{

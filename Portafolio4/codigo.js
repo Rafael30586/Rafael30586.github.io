@@ -18,6 +18,7 @@ const botonTema = document.getElementById("tema");
 //titulos = document.querySelectorAll(".titulo");
 const textoEncabezado = document.createTextNode("Desarrollador Java");
 const textoEncabezadoOriginal = document.createTextNode("F. Rafael Alvarez");
+let tamanioVentana; //usar window.innerWidth para responsive
 let estilo = 1;
 
 let navBar;

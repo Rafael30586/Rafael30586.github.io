@@ -341,6 +341,7 @@ a {
     --javascriptColor: #ffe507;
 }
 
+
 .contenedorTrabajos:hover{
     box-shadow: 5px 5px 5px  #191919;
     transition-duration: 0.2s;
@@ -366,8 +367,21 @@ a {
     opacity: 0.8;
 }
 
+@media only screen and (orientation: portrait), (max-width:700px){
+    .accordion-button{
+        font-size: small;
+    }
+    
+}
+
 .badge{
     margin-left: 5px;
+}
+
+@media only screen and (orientation: portrait), (max-width:700px){
+    .badge{
+        font-size: xx-small;
+    }
 }
 
 .javaBadge{

@@ -71,13 +71,20 @@ a {
 
 .navOpcion{
     opacity: 1;
+    font-size: x-large;
+}
+
+@media only screen and (orientation: portrait), (max-width:700px){
+    .navOpcion{
+        font-size: small;
+    }
 }
 
 .navOpcion:hover{
     opacity: 0.6;
-    /*background-color: #bb1afb;*/
-    /*background: linear-gradient(to bottom,#0000b7,#bb1afb);
-    border-radius: 25%;*/
+    background-color: #bb1afb;
+    background: linear-gradient(to bottom,#0000b7,#bb1afb);
+    border-radius: 25%;
 }
 /*
 #presentacion h1 {
@@ -107,11 +114,17 @@ a {
 .tema:hover{
     /*filter:brightness(110%);*/
     opacity: 0.9;
+    background-color: #bb1afb;
+    background: linear-gradient(to bottom,#0000b7,#bb1afb);
+    border-radius: 25%;
 }
 
 .tema2:hover{
     /*filter:brightness(110%);*/
     opacity: 0.9;
+    background-color: #bb1afb;
+    background: linear-gradient(to bottom,#0000b7,#bb1afb);
+    border-radius: 25%;
 }
 
 #nombre{
@@ -126,6 +139,13 @@ a {
     animation-duration: 0.5s;
     letter-spacing: 7px;
 }
+
+/*
+@media only screen and (orientation: portrait), (max-width:700px){
+    #rol{
+        font-size: large;
+    }
+}*/
 
 #presentacion img{
     clip-path: polygon(50% 70%, 0% 100%, 100% 100%);

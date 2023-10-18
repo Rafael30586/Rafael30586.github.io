@@ -395,6 +395,7 @@ a {
 @media only screen and (orientation: portrait), (max-width:700px){
     .badge{
         font-size: large;
+        margin-top: 5px;
     }
 }
 

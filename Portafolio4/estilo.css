@@ -340,6 +340,12 @@ a {
     --CSSColor: #1b51d1;
     --javascriptColor: #ffe507;
 }
+/*
+@media only screen and (orientation: portrait), (max-width:700px){
+    #accordionExample{
+        width: 100%;
+    }
+}*/
 
 
 .contenedorTrabajos:hover{
@@ -369,9 +375,17 @@ a {
 
 @media only screen and (orientation: portrait), (max-width:700px){
     .accordion-button{
-        font-size: small;
+        font-size: x-large;
+        display: grid;
+        row-gap: 15px;
     }
     
+}
+
+@media only screen and (orientation: portrait), (max-width:700px){
+    .nombreTrabajo{
+        display: block;
+    }
 }
 
 .badge{
@@ -380,7 +394,7 @@ a {
 
 @media only screen and (orientation: portrait), (max-width:700px){
     .badge{
-        font-size: xx-small;
+        font-size: large;
     }
 }
 

@@ -473,6 +473,13 @@ a {
     color: var(--colorBody);
 }
 
+.enlace:hover{
+    /*background: linear-gradient(to bottom,#ffff85,var(--colorPresentacion));*/
+    opacity: 0.8;
+    border-radius: 10%;
+    /*filter: invert(100%);*/
+}
+
 
 #icon-grid div div div p{
     cursor: pointer;

@@ -127,10 +127,30 @@ a {
     border-radius: 25%;
 }
 
+@media only screen and (orientation: portrait), (max-width:500px){
+    #tema{
+        width: 0px;
+        height: 0px;
+    }
+}
+
+@media only screen and (orientation: portrait), (max-width:500px){
+    #tema2{
+        width: 0px;
+        height: 0px;
+    }
+}
+
 #nombre{
     animation-name: AzulAMorado;
     animation-duration: 5s;
     animation-iteration-count: infinite;
+}
+
+@media only screen and (orientation: portrait), (max-width:500px){
+    #nombre{
+        font-size: large;
+    }
 }
 
 #rol{
@@ -138,6 +158,12 @@ a {
     animation-name: separacion;
     animation-duration: 0.5s;
     letter-spacing: 7px;
+}
+
+@media only screen and (orientation: portrait), (max-width:500px){
+    #rol{
+        font-size: large;
+    }
 }
 
 /*
@@ -415,6 +441,13 @@ a {
 @media only screen and (orientation: portrait), (max-width:700px){
     .badge{
         font-size: large;
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (orientation: portrait), (max-width:500px){
+    .badge{
+        font-size: small;
         margin-top: 5px;
     }
 }

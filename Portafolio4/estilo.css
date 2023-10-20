@@ -63,10 +63,18 @@ a {
     /*background: linear-gradient(to bottom,#0000b7,#1432c1);*/
     /*background: linear-gradient(to bottom,#8319b1,#0000b7);*/
     background: linear-gradient(to bottom,var(--colorNav),var(--colorNav2));
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    font-weight: bolder;
+    font-style: italic;
 }
 
 #encabezado2{
     background: linear-gradient(to bottom, var(--colorNav3), var(--colorNav4));
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    font-weight: bolder;
+    font-style: italic;
 }
 
 .navOpcion{

@@ -127,14 +127,14 @@ a {
     border-radius: 25%;
 }
 
-@media only screen and (orientation: portrait), (max-width:500px){
+@media only screen and (orientation: portrait), (max-width:700px){
     #tema{
         width: 0px;
         height: 0px;
     }
 }
 
-@media only screen and (orientation: portrait), (max-width:500px){
+@media only screen and (orientation: portrait), (max-width:700px){
     #tema2{
         width: 0px;
         height: 0px;
@@ -243,6 +243,12 @@ a {
 .contenedorTrayectoria2:hover{
     box-shadow: 5px 5px 5px  #dadd7e;
     background: linear-gradient(to bottom,#686868,#fdffc4);
+}
+
+@media only screen and (orientation: portrait), (max-width:700px){
+    .etapa{
+        font-size: small;
+    }
 }
 
 

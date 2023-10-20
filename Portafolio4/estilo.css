@@ -47,6 +47,15 @@
     100% {border-radius: 4%;}
 }
 
+@keyframes extension{
+    0% {letter-spacing:1px;}
+    20% {letter-spacing:2px;}
+    40% {letter-spacing:3px;}
+    60% {letter-spacing:4px;}
+    80% {letter-spacing:5px;}
+    100% {letter-spacing:5px;}
+}
+
 body{
     /*background-color:  #313131 ;*/
     background-color: var(--colorBody);
@@ -530,7 +539,16 @@ a {
     /*background: linear-gradient(to bottom,#ffff85,var(--colorPresentacion));*/
     opacity: 0.8;
     border-radius: 10%;
-    /*filter: invert(100%);*/
+    /*filter: invert(100%);
+    animation-duration: extension;
+    animation-duration: 1s;
+    letter-spacing: 5px;*/
+}
+
+.enlaceSondeado{ /*Usar esta clase para extender texto de enlaces de contacto, ayudarme con javascript*/
+    animation-name: extension;
+    animation-duration: 1s;
+    letter-spacing: 5px;
 }
 
 

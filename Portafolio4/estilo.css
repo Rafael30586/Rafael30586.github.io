@@ -56,6 +56,30 @@
     100% {letter-spacing:5px;}
 }
 
+@keyframes volcan{
+    0% {filter:brightness(90%)}
+    5% {filter:brightness(95%)}
+    10% {filter:brightness(100%)}
+    15% {filter:brightness(105%)}
+    20% {filter:brightness(110%)}
+    25% {filter:brightness(105%)}
+    30% {filter:brightness(100%)}
+    35% {filter:brightness(95%)}
+    40% {filter:brightness(90%)}
+    45% {filter:brightness(85%)}
+    50% {filter:brightness(80%)}
+    55% {filter:brightness(85%)}
+    60% {filter:brightness(90%)}
+    65% {filter:brightness(95%)}
+    70% {filter:brightness(100%)}
+    75% {filter:brightness(105%)}
+    80% {filter:brightness(110%)}
+    85% {filter:brightness(105%)}
+    90% {filter:brightness(100%)}
+    95% {filter:brightness(95%)}
+    100% {filter:brightness(90%)}
+}
+
 body{
     /*background-color:  #313131 ;*/
     background-color: var(--colorBody);
@@ -268,6 +292,14 @@ a {
     background: linear-gradient(to bottom,#686868,#fdffc4);
 }
 
+#nav-tabContent{
+    opacity: 0.8;
+}
+
+#nav-tabContent:hover{
+    opacity: 1;
+}
+
 @media only screen and (orientation: portrait), (max-width:700px){
     .etapa{
         font-size: small;
@@ -341,21 +373,25 @@ a {
 .contenedorHabilidades{
     transition-duration: 0.2s;
     transition-property: box-shadow;
+    opacity: 0.8;
 }
 
 .contenedorHabilidades2{
     transition-duration: 0.2s;
     transition-property: box-shadow;
+    opacity: 0.8;
 }
 
 .contenedorHabilidades:hover{
     box-shadow: 5px 5px 5px  #191919;
     background: linear-gradient(to bottom,#686868,#313131);
+    opacity: 1;
 }
 
 .contenedorHabilidades2:hover{
     box-shadow: 5px 5px 5px  #dadd7e;
     background: linear-gradient(to bottom,#686868,#fdffc4);
+    opacity: 1;
 }
 
 #javaHabilidad{
@@ -524,15 +560,28 @@ a {
 
 .contactos{
     background: linear-gradient(to bottom,#e61b13,#ffff85,#460087);
-    color: var(--colorBody);/*
+    color: var(--colorBody);
     animation-name: volcan;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;*/
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    opacity: 0.8;
+}
+
+.contactos:hover{
+    opacity: 1;
 }
 
 .contactos2{
     background: linear-gradient(to bottom,#69d151,var(--colorPresentacion),#00a0ff);
     color: var(--colorBody);
+    animation-name: volcan;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    opacity: 0.8;
+}
+
+.contactos2:hover{
+    opacity: 1;
 }
 
 .enlace:hover{

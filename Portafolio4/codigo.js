@@ -24,11 +24,11 @@ let estilo = 1;
 let navBar;
 
 function mostrarNumero(){
-    alert(`0351 156754046`);
+    alert(`Consulte el número telefónico del desarrollador de este portafolio por otro medio`);
 }
 
 function mostrarCorreo(){
-    alert(`fraq86@gmail.com`);
+    alert(`Puede consultar el correo electrónico del desarrollador de este portafolio por otro medio`);
 }
 
 function mostrarRol(){

@@ -315,7 +315,7 @@ a {
 
 
 .titulo{
-    border-bottom-color: #686868;
+    border-bottom-color: var(--colorBody);
     border-bottom-style: solid;
     border-bottom-width: 1px;
     letter-spacing: 30px;
@@ -325,7 +325,7 @@ a {
 
 @media only screen and (orientation: portrait), (max-width:700px){
     .titulo{
-        border-bottom-color: #686868;
+        border-bottom-color: var(--colorBody);
         border-bottom-style: solid;
         border-bottom-width: 1px;
         letter-spacing: 10px;
@@ -357,7 +357,7 @@ a {
         font-size: xx-large;
     }
 }
-
+/*
 .titulo:hover{
     color: var(--colorNav);
     border-bottom-color: var(--colorNav2);
@@ -366,7 +366,7 @@ a {
 .titulo2:hover{
     color: var(--colorNav);
     border-bottom-color: var(--colorNav2);
-}
+}*/
 
 .trayectoriaItems{
     /*background-color: var(--colorNav);*/

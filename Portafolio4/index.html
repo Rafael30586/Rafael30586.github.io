@@ -7,7 +7,7 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="estilo.css">
-	<title>Portafolio 4 - versión 4.1.7</title>
+	<title>Portafolio 4 - versión 4.1.8</title>
 </head>
 
 <body id="body">
@@ -71,20 +71,23 @@
 		<nav>
 			<div class="nav nav-tabs rounded-top trayectoriaItems" id="nav-tab" role="tablist"> <!-- cambie home por inicio-->
 				<button class="nav-link active etapa" id="nav-inicio-tab" data-bs-toggle="tab" data-bs-target="#nav-inicio" type="button"
-					role="tab" aria-controls="nav-inicio" aria-selected="true">Primeros pasos</button>
+					role="tab" aria-controls="nav-inicio" aria-selected="true">1) Primeros pasos</button>
 				<button class="nav-link etapa" id="nav-busqueda-tab" data-bs-toggle="tab" data-bs-target="#nav-busqueda" type="button"
-					role="tab" aria-controls="nav-busqueda" aria-selected="false">Decisión</button> <!-- cambie profile por busqueda-->
-				<button class="nav-link etapa" id="nav-beca-tab" data-bs-toggle="tab" data-bs-target="#nav-beca" type="button" role="tab"
-					aria-controls="nav-beca" aria-selected="false">Argentina programa</button> <!-- cambie contact por beca-->
+					role="tab" aria-controls="nav-busqueda" aria-selected="false">2) Decisión</button> <!-- cambie profile por busqueda-->
+				<button class="nav-link etapa" id="nav-beca-tab" data-bs-toggle="tab" data-bs-target="#nav-beca" type="button"
+					role="tab" aria-controls="nav-beca" aria-selected="false">3) Argentina programa</button>
+				<!-- cambie contact por beca-->
+				<button class="nav-link etapa" id="nav-spring-tab" data-bs-toggle="tab" data-bs-target="#nav-spring" type="button"
+					role="tab" aria-controls="nav-spirng" aria-selected="false">4) Especialización</button>
 				<button class="nav-link etapa" id="nav-anterior-tab" data-bs-toggle="tab" data-bs-target="#nav-anterior" type="button" role="tab"
-					aria-controls="nav-anterior" aria-selected="false">Antes de la programación</button> <!-- cambie beca por anterior-->
+					aria-controls="nav-anterior" aria-selected="false">0) Antes de la programación</button> <!-- cambie beca por anterior-->
 				 <!-- cambie disabled por antes-->
 			</div>
 		</nav>
 		<div class="tab-content bg-warning rounded-bottom" id="nav-tabContent">
 			<div class="tab-pane fade show active" id="nav-inicio" role="tabpanel" aria-labelledby="nav-inicio-tab"
 				tabindex="0">
-				<p>Cuando decidí cambiar de profesión, comencé a investigar sobre programación, ya que muchos
+				<p>Cuando decidí cambiar de profesión comencé a investigar sobre programación, ya que muchos
 					lo recomendaban y además siempre me han gustado las computadoras y los video juegos.
 					Bastó con un video de diez minutos de un programador experimentado en youtube sobre las bases
 					de esta area para convencerme de que era lo que quería hacer y de que debía haber comenzado
@@ -106,12 +109,17 @@
 					que supe aprovechar he podido aprender git y adquirir muchos otros conocimientos que había pasado
 					por alto mientras estudiaba como autodidacta (JPA, UML, DAO, etc).</p>
 			</div>
+			<div class="tab-pane fade" id="nav-spring" role="tabpanel" aria-labelledby="nav-spring-tab" tabindex="0">
+				<p> Luego de aprobar el trayecto gratuito de Argentina programa, procedí a realizar trabajos con 
+					React para comprender mejor sus ventajas frente a javascript puro y aproveché para aprender 
+					Spring Boot, esta vez con muchos más conocimientos y experiencia que antes.</p>
+			</div>
 			<div class="tab-pane fade" id="nav-anterior" role="tabpanel" aria-labelledby="nav-anterior-tab" tabindex="0">
 				<p>Antes de programar había dedicado mi vida académica y laboral a las ciencias exactas, la 
 					educación, la industria de los alimentos y el laboratorio de ciencias naturales. Estas areas no 
 					me proporcionaban de los beneficios que buscaba, por lo que era necesario cambiar. Sabía que 
 					quería trabajar con computadoras, pero por falta de información no se me había ocurrido que la 
-					programación era el camino que quería transitar.</p>
+					programación era el camino más conveniente para mí.</p>
 			</div>
 			
 		</div>

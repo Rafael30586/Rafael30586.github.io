@@ -312,6 +312,13 @@ a {
     opacity: 1;
 }
 
+.tab-pane{
+    padding-left: 10px;
+    padding-bottom: 3px;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
 @media only screen and (orientation: portrait), (max-width:700px){
     .etapa{
         font-size: small;

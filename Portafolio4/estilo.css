@@ -276,8 +276,8 @@ a {
 }
 
 .resaltado{
-    color: #dadd7e;
     font-weight: 600;
+    font-style: italic;
 }
 
 .contenedor{

@@ -275,6 +275,11 @@ a {
     box-shadow: 20px 20px 5px  #dadd7e ;
 }
 
+.resaltado{
+    color: #dadd7e;
+    font-weight: 600;
+}
+
 .contenedor{
     margin-top: 300px;
 }

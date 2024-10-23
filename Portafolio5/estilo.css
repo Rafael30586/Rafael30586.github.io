@@ -1,0 +1,288 @@
+@keyframes aparicion {
+    from {opacity: 0;}
+    to {opacity: 0.8;}
+}
+
+@keyframes enlace {
+    from {color: #ff9700;}
+    to {color: #e2eb2b;}
+}
+
+body{
+    background-color:  #222838 ;
+    background: linear-gradient(to right,#222838, #23336d );
+    color:   #f9fd99  ;
+}
+
+#contenedor-principal{
+    width: 100%;
+    height: 2000px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 40px;
+}
+
+#sub-contenedor{
+    width: 800px;
+    height: 2000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (orientation:portrait),(max-width: 700px){
+    #sub-contenedor{
+        width: 400px;
+    }
+}
+
+@media only screen and (orientation:portrait),(max-width: 500px){
+    #sub-contenedor{
+        width: 200px;
+    }
+}
+
+header{
+    font-size: 50px;
+    padding-left: 20px;
+}
+
+main{
+    animation-name: aparicion;
+    animation-duration: 1.2s;
+}
+
+section{
+    margin-top: 120px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (orientation:portrait),(max-width: 700px){
+    section{
+        width: 400px;
+    }
+}
+
+@media only screen and (orientation:portrait),(max-width: 500px){
+    section{
+        width: 200px;
+    }
+}
+
+h2{
+    text-align: end;
+    font-family: 'Courier New', Courier, monospace;
+    border-bottom-style: solid;
+    color:  #2beb51 ;
+}
+
+#sobre-mi p{
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    opacity: 0.8;
+    transition-duration: 0.3s;
+    transition-property: opacity;
+}
+
+@media only screen and (orientation:portrait),(max-width:700px){
+    #sobre-mi p{
+        font-size: 13px;
+    }
+}
+
+#sobre-mi p:hover{
+    opacity: 0.95;
+}
+
+.palabra-especial{
+    color: #2beb51;
+}
+
+#mi-foto{
+    width: 23%;
+    height: 23%;
+    float: right;
+    margin-left: 10px;
+}
+
+#contenedor-proyectos{
+    width: 100%;
+}
+
+.proyecto{
+    height: 170px;
+    width: 100%;
+    padding: 5px;
+    opacity: 0.8;
+}
+
+@media only screen and (orientation:portrait),(max-width:700px){
+    .proyecto {
+        height: 250px;
+    }
+}
+
+@media only screen and (orientation:portrait),(max-width:500px){
+    .proyecto {
+        font-size: 13px;
+        height: 250px;
+    }
+}
+
+.proyecto:hover{
+    border-style: solid;
+    border-radius: 1%;
+    border-width: 1px;
+    border-color: #2beb51;
+    border-left-color: #e2eb2b;
+    border-top-color: #e2eb2b;
+    opacity: 1;
+}
+
+h3{
+    color: #2beb51;
+    font-size: 16px;
+}
+
+.enlace-repositorio{
+    animation-name: enlace;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.subcontenedor-habilidades{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.habilidad-icono{
+    filter: sepia(100%);
+    transition-property: filter;
+    transition-duration: 0.5s;
+}
+
+.habilidad-icono:hover{
+    filter: sepia(0%);
+}
+
+.habilidad-principal{
+    height: 120px;
+    width: 120px;
+}
+
+@media only screen and (orientation:portrait),(max-width:700px){
+    .habilidad-principal{
+        height: 80px;
+        width: 80px;
+    }
+}
+
+
+.java-icono{
+    height: 100%;
+    width: 100%;
+}
+
+.spring-boot-icono{
+    height: 100%;
+    width: 100%;
+}
+
+.spring-security-icono{
+    height: 100%;
+    width: 100%;
+}
+
+.spring-security-color{
+    background-color: #58efb1;
+}
+
+.sql-icono{
+    height: 100%;
+    width: 100%;
+}
+
+.habilidad-secundaria{
+    height: 80px;
+    width: 80px;
+}
+
+@media only screen and (orientation:portrait),(max-width:700px){
+    .habilidad-secundaria{
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media only screen and (orientation:portrait),(max-width:500px){
+    .habilidad-secundaria{
+        height: 20px;
+        width: 20px;
+    }
+}
+
+.docker-icono{
+    height: 100%;
+    width: 100%;
+}
+
+.git-icono{
+    height: 100%;
+    width: 100%;
+}
+
+.mongodb-icono{
+    height: 100%;
+    width: 100%;
+}
+
+.html-icono{
+    height: 100%;
+    width: 100%;
+}
+
+.css-icono{
+    height: 100%;
+    width: 100%;
+}
+
+.javascript-icono{
+    height: 100%;
+    width: 100%;
+}
+
+#contenedor-contactos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contenedor-contacto{
+    height: 120px;
+    width: 120px;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+@media only screen and (orientation:portrait),(max-width:700px){
+    .contenedor-contacto{
+        height: 80px;
+        width: 80px;
+    }
+}
+
+.contenedor-contacto:hover{
+    transform: scale(1.1,1.1);
+
+}
+
+.github-icono{
+    width: 100%;
+    height: 100%;
+}
+
+.linkedin-icono{
+    width: 100%;
+    height: 100%;
+}

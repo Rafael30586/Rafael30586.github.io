@@ -1,0 +1,57 @@
+:root{
+    --color1:#6E0D1A;
+    --color2:#9E152B;
+    --color3:#FFF9CC;
+    --color4:#16BA24;
+}
+/*
+@keyframes crecer {
+    from {transform: scaleX(0.4);}
+    to{transform: scaleX(2);}
+}*/
+
+body{
+    background-color: var(--color3);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header{
+    background: linear-gradient(to bottom,var(--color1),var(--color2));
+    padding: 2px;
+}
+
+header > h1{
+    text-align: center;
+    font-size: 4em;
+    color: var(--color3);
+    
+}
+
+p{
+    margin-top: 0;
+    background: linear-gradient(to bottom,var(--color2),var(--color1));
+    color:var(--color3);
+    padding: 10px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+button{
+    width: 100px;
+    background: linear-gradient(to bottom,var(--color1),var(--color2));
+    color:var(--color3);
+}
+
+#numero{
+    color: var(--color4);
+    font-size: 2em;/*
+    animation-name: crecer;
+    animation-duration: 2s;*/
+}

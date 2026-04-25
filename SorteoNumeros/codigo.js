@@ -6,7 +6,7 @@ let numeroObtenido = document.createElement("span")
 
 
 function obtenerNumeroAleatorio() {
-  return Math.floor(Math.random() * 400) + 1
+  return Math.floor(Math.random() * 270) + 1
 }
 
 function insertarNumero(){
